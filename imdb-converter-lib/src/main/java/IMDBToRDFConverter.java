@@ -411,7 +411,15 @@ public abstract class IMDBToRDFConverter {
             } else {
                 predicate = cast;
             }
-            if (row.getJobTitle() != null) {
+
+            statement = valueFactory.createStatement(
+                    titleId,
+                    predicate,
+                    nameId
+            );
+            process(statement);
+
+            if (row.getJobTitle() != null || row.getCharacters() != null) {
                 createReifiedStatementTriples(
                         this::process,
                         titleId,
@@ -419,32 +427,24 @@ public abstract class IMDBToRDFConverter {
                         nameId,
                         statementID
                 );
-            } else {
-                statement = valueFactory.createStatement(
-                        titleId,
-                        predicate,
-                        nameId
-                );
-                process(statement);
-            }
-
-            if (row.getJobTitle() != null) {
-                statement = valueFactory.createStatement(
-                        statementID,
-                        jobTitle,
-                        Values.literal(row.getJobTitle())
-                );
-                process(statement);
-            }
-
-            if (row.getCharacters() != null) {
-                for (String character : row.getCharacters()) {
+                if (row.getJobTitle() != null) {
                     statement = valueFactory.createStatement(
                             statementID,
-                            playedCharacter,
-                            Values.literal(character)
+                            jobTitle,
+                            Values.literal(row.getJobTitle())
                     );
                     process(statement);
+                }
+
+                if (row.getCharacters() != null) {
+                    for (String character : row.getCharacters()) {
+                        statement = valueFactory.createStatement(
+                                statementID,
+                                playedCharacter,
+                                Values.literal(character)
+                        );
+                        process(statement);
+                    }
                 }
             }
         }

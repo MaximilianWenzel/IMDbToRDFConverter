@@ -9,8 +9,5 @@
         <module name="IMDBConverter" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="IMDBConverter" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

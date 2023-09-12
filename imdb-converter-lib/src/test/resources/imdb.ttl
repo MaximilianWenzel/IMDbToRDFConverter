@@ -15796,9 +15796,14 @@ imdb:cast-self rdfs:domain imdb:work;
   rdfs:subPropertyOf imdb:cast .
 
 imdb:tt0000001 imdb:cast-self imdb:nm1588970;
-  imdb:cast-director imdb:nm0005690 .
+  imdb:cast-director imdb:nm0005690;
+  imdb:cast-cinematographer imdb:nm0374658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb21 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e11 a rdf:Statement;
+  rdf:subject imdb:tt0000001;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm1588970;
+  imdb:playedCharacter "Self" .
 
 imdb:cast-director rdfs:domain imdb:work;
   rdfs:range imdb:director;
@@ -15808,7 +15813,7 @@ imdb:cast-cinematographer rdfs:domain imdb:work;
   rdfs:range imdb:cinematographer;
   rdfs:subPropertyOf imdb:cast .
 
-_:b2f00e3714564bd2a2adecab33d7abb23 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e13 a rdf:Statement;
   rdf:subject imdb:tt0000001;
   rdf:predicate imdb:cast-cinematographer;
   rdf:object imdb:nm0374658;
@@ -15822,6 +15827,7 @@ imdb:cast-composer rdfs:domain imdb:work;
   rdfs:subPropertyOf imdb:cast .
 
 imdb:tt0000003 imdb:cast-director imdb:nm0721526;
+  imdb:cast-producer imdb:nm1770680;
   imdb:cast-composer imdb:nm1335271;
   imdb:cast-editor imdb:nm5442200 .
 
@@ -15829,7 +15835,7 @@ imdb:cast-producer rdfs:domain imdb:work;
   rdfs:range imdb:producer;
   rdfs:subPropertyOf imdb:cast .
 
-_:b2f00e3714564bd2a2adecab33d7abb27 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e17 a rdf:Statement;
   rdf:subject imdb:tt0000003;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm1770680;
@@ -15847,13 +15853,22 @@ imdb:cast-actor rdfs:domain imdb:work;
   rdfs:subPropertyOf imdb:cast .
 
 imdb:tt0000005 imdb:cast-actor imdb:nm0443482, imdb:nm0653042;
-  imdb:cast-director imdb:nm0005690 .
+  imdb:cast-director imdb:nm0005690;
+  imdb:cast-producer imdb:nm0249379 .
 
-_:b2f00e3714564bd2a2adecab33d7abb212 imdb:playedCharacter "Blacksmith" .
+_:562bd3866b5049f8bd70192e99ab63e112 a rdf:Statement;
+  rdf:subject imdb:tt0000005;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0443482;
+  imdb:playedCharacter "Blacksmith" .
 
-_:b2f00e3714564bd2a2adecab33d7abb213 imdb:playedCharacter "Assistant" .
+_:562bd3866b5049f8bd70192e99ab63e113 a rdf:Statement;
+  rdf:subject imdb:tt0000005;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0653042;
+  imdb:playedCharacter "Assistant" .
 
-_:b2f00e3714564bd2a2adecab33d7abb215 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e115 a rdf:Statement;
   rdf:subject imdb:tt0000005;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0249379;
@@ -15862,9 +15877,10 @@ _:b2f00e3714564bd2a2adecab33d7abb215 a rdf:Statement;
 imdb:tt0000006 imdb:cast-director imdb:nm0005690 .
 
 imdb:tt0000007 imdb:cast-actor imdb:nm0179163, imdb:nm0183947;
-  imdb:cast-director imdb:nm0005690, imdb:nm0374658 .
+  imdb:cast-director imdb:nm0005690, imdb:nm0374658;
+  imdb:cast-producer imdb:nm0249379 .
 
-_:b2f00e3714564bd2a2adecab33d7abb221 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e121 a rdf:Statement;
   rdf:subject imdb:tt0000007;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0249379;
@@ -15874,7 +15890,11 @@ imdb:tt0000008 imdb:cast-actor imdb:nm0653028;
   imdb:cast-director imdb:nm0005690;
   imdb:cast-cinematographer imdb:nm0374658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb222 imdb:playedCharacter "Sneezing Man" .
+_:562bd3866b5049f8bd70192e99ab63e122 a rdf:Statement;
+  rdf:subject imdb:tt0000008;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0653028;
+  imdb:playedCharacter "Sneezing Man" .
 
 imdb:cast-actress rdfs:domain imdb:work;
   rdfs:range imdb:actress;
@@ -15884,76 +15904,153 @@ imdb:tt0000009 imdb:cast-actress imdb:nm0063086;
   imdb:cast-actor imdb:nm0183823, imdb:nm1309758;
   imdb:cast-director imdb:nm0085156 .
 
-_:b2f00e3714564bd2a2adecab33d7abb225 imdb:playedCharacter "Miss Geraldine Holbrook (Miss Jerry)" .
+_:562bd3866b5049f8bd70192e99ab63e125 a rdf:Statement;
+  rdf:subject imdb:tt0000009;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0063086;
+  imdb:playedCharacter "Miss Geraldine Holbrook (Miss Jerry)" .
 
-_:b2f00e3714564bd2a2adecab33d7abb226 imdb:playedCharacter "Mr. Hamilton" .
+_:562bd3866b5049f8bd70192e99ab63e126 a rdf:Statement;
+  rdf:subject imdb:tt0000009;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0183823;
+  imdb:playedCharacter "Mr. Hamilton" .
 
-_:b2f00e3714564bd2a2adecab33d7abb227 imdb:playedCharacter "Chauncey Depew - the Director of the New York Central Railroad" .
+_:562bd3866b5049f8bd70192e99ab63e127 a rdf:Statement;
+  rdf:subject imdb:tt0000009;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1309758;
+  imdb:playedCharacter "Chauncey Depew - the Director of the New York Central Railroad" .
 
 imdb:tt0000010 imdb:cast-director imdb:nm0525910 .
 
 imdb:tt0000011 imdb:cast-actor imdb:nm3692297;
   imdb:cast-director imdb:nm0804434 .
 
-_:b2f00e3714564bd2a2adecab33d7abb230 imdb:playedCharacter "Acrobats" .
+_:562bd3866b5049f8bd70192e99ab63e130 a rdf:Statement;
+  rdf:subject imdb:tt0000011;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm3692297;
+  imdb:playedCharacter "Acrobats" .
 
 imdb:tt0000012 imdb:cast-self imdb:nm2880396, imdb:nm9735580, imdb:nm0525900, imdb:nm9735581,
     imdb:nm9735579, imdb:nm9653419;
   imdb:cast-director imdb:nm0525908, imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb232 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e132 a rdf:Statement;
+  rdf:subject imdb:tt0000012;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm2880396;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb233 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e133 a rdf:Statement;
+  rdf:subject imdb:tt0000012;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm9735580;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb234 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e134 a rdf:Statement;
+  rdf:subject imdb:tt0000012;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0525900;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb235 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e135 a rdf:Statement;
+  rdf:subject imdb:tt0000012;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm9735581;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb238 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e138 a rdf:Statement;
+  rdf:subject imdb:tt0000012;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm9735579;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb239 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e139 a rdf:Statement;
+  rdf:subject imdb:tt0000012;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm9653419;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000013 imdb:cast-self imdb:nm0525908, imdb:nm1715062;
   imdb:cast-director imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb240 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e140 a rdf:Statement;
+  rdf:subject imdb:tt0000013;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0525908;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb241 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e141 a rdf:Statement;
+  rdf:subject imdb:tt0000013;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm1715062;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000014 imdb:cast-actor imdb:nm0166380, imdb:nm0244989;
   imdb:cast-director imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb243 imdb:playedCharacter "The Gardener" .
+_:562bd3866b5049f8bd70192e99ab63e143 a rdf:Statement;
+  rdf:subject imdb:tt0000014;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0166380;
+  imdb:playedCharacter "The Gardener" .
 
-_:b2f00e3714564bd2a2adecab33d7abb244 imdb:playedCharacter "The Boy" .
+_:562bd3866b5049f8bd70192e99ab63e144 a rdf:Statement;
+  rdf:subject imdb:tt0000014;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0244989;
+  imdb:playedCharacter "The Boy" .
 
 imdb:tt0000015 imdb:cast-director imdb:nm0721526 .
 
 imdb:tt0000016 imdb:cast-self imdb:nm0525900, imdb:nm9735581;
   imdb:cast-director imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb247 imdb:playedCharacter "Self (on the pier)" .
+_:562bd3866b5049f8bd70192e99ab63e147 a rdf:Statement;
+  rdf:subject imdb:tt0000016;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0525900;
+  imdb:playedCharacter "Self (on the pier)" .
 
-_:b2f00e3714564bd2a2adecab33d7abb248 imdb:playedCharacter "Self (on the pier)" .
+_:562bd3866b5049f8bd70192e99ab63e148 a rdf:Statement;
+  rdf:subject imdb:tt0000016;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm9735581;
+  imdb:playedCharacter "Self (on the pier)" .
 
 imdb:tt0000017 imdb:cast-actor imdb:nm3691272;
   imdb:cast-actress imdb:nm3692829;
   imdb:cast-director imdb:nm1587194, imdb:nm0804434 .
 
-_:b2f00e3714564bd2a2adecab33d7abb250 imdb:playedCharacter "The boy" .
+_:562bd3866b5049f8bd70192e99ab63e150 a rdf:Statement;
+  rdf:subject imdb:tt0000017;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm3691272;
+  imdb:playedCharacter "The boy" .
 
-_:b2f00e3714564bd2a2adecab33d7abb251 imdb:playedCharacter "The girl" .
+_:562bd3866b5049f8bd70192e99ab63e151 a rdf:Statement;
+  rdf:subject imdb:tt0000017;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm3692829;
+  imdb:playedCharacter "The girl" .
 
 imdb:tt0000018 imdb:cast-actor imdb:nm3692071;
   imdb:cast-director imdb:nm0804434 .
 
-_:b2f00e3714564bd2a2adecab33d7abb254 imdb:playedCharacter "The Boxer" .
+_:562bd3866b5049f8bd70192e99ab63e154 a rdf:Statement;
+  rdf:subject imdb:tt0000018;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm3692071;
+  imdb:playedCharacter "The Boxer" .
 
 imdb:tt0000019 imdb:cast-director imdb:nm0932055 .
 
-imdb:tt0000020 imdb:cast-director imdb:nm0010291 .
+imdb:tt0000020 imdb:cast-director imdb:nm0010291;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb258 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e158 a rdf:Statement;
   rdf:subject imdb:tt0000020;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -15964,21 +16061,31 @@ imdb:tt0000022 imdb:cast-director imdb:nm0525910 .
 imdb:tt0000023 imdb:cast-director imdb:nm0525910 .
 
 imdb:tt0000024 imdb:cast-self imdb:nm0256651, imdb:nm0435118;
-  imdb:cast-director imdb:nm0010291 .
+  imdb:cast-director imdb:nm0010291;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb261 imdb:playedCharacter "Self - Empress of Gemany" .
+_:562bd3866b5049f8bd70192e99ab63e161 a rdf:Statement;
+  rdf:subject imdb:tt0000024;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0256651;
+  imdb:playedCharacter "Self - Empress of Gemany" .
 
-_:b2f00e3714564bd2a2adecab33d7abb262 imdb:playedCharacter "Self - Emperor of Germany" .
+_:562bd3866b5049f8bd70192e99ab63e162 a rdf:Statement;
+  rdf:subject imdb:tt0000024;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0435118;
+  imdb:playedCharacter "Self - Emperor of Germany" .
 
-_:b2f00e3714564bd2a2adecab33d7abb264 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e164 a rdf:Statement;
   rdf:subject imdb:tt0000024;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
   imdb:jobTitle "producer" .
 
-imdb:tt0000025 imdb:cast-director imdb:nm0010291 .
+imdb:tt0000025 imdb:cast-director imdb:nm0010291;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb266 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e166 a rdf:Statement;
   rdf:subject imdb:tt0000025;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -15987,31 +16094,67 @@ _:b2f00e3714564bd2a2adecab33d7abb266 a rdf:Statement;
 imdb:tt0000026 imdb:cast-actor imdb:nm2350007, imdb:nm0525907, imdb:nm1151424, imdb:nm2354154;
   imdb:cast-director imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb267 imdb:playedCharacter "Valet" .
+_:562bd3866b5049f8bd70192e99ab63e167 a rdf:Statement;
+  rdf:subject imdb:tt0000026;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2350007;
+  imdb:playedCharacter "Valet" .
 
-_:b2f00e3714564bd2a2adecab33d7abb268 imdb:playedCharacter "Man playing cards, seated on the left" .
+_:562bd3866b5049f8bd70192e99ab63e168 a rdf:Statement;
+  rdf:subject imdb:tt0000026;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0525907;
+  imdb:playedCharacter "Man playing cards, seated on the left" .
 
-_:b2f00e3714564bd2a2adecab33d7abb269 imdb:playedCharacter "Man playing cards, seated on the right" .
+_:562bd3866b5049f8bd70192e99ab63e169 a rdf:Statement;
+  rdf:subject imdb:tt0000026;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1151424;
+  imdb:playedCharacter "Man playing cards, seated on the right" .
 
-_:b2f00e3714564bd2a2adecab33d7abb270 imdb:playedCharacter "Man playing cards, seated in the middle" .
+_:562bd3866b5049f8bd70192e99ab63e170 a rdf:Statement;
+  rdf:subject imdb:tt0000026;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2354154;
+  imdb:playedCharacter "Man playing cards, seated in the middle" .
 
 imdb:tt0000027 imdb:cast-director imdb:nm0525910 .
 
 imdb:tt0000028 imdb:cast-self imdb:nm2350838, imdb:nm0525908;
   imdb:cast-director imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb273 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e173 a rdf:Statement;
+  rdf:subject imdb:tt0000028;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm2350838;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb274 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e174 a rdf:Statement;
+  rdf:subject imdb:tt0000028;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0525908;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000029 imdb:cast-self imdb:nm0525908, imdb:nm0525900, imdb:nm2350838;
   imdb:cast-director imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb276 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e176 a rdf:Statement;
+  rdf:subject imdb:tt0000029;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0525908;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb277 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e177 a rdf:Statement;
+  rdf:subject imdb:tt0000029;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0525900;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb278 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e178 a rdf:Statement;
+  rdf:subject imdb:tt0000029;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm2350838;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000030 imdb:cast-director imdb:nm0010291, imdb:nm0666972 .
 
@@ -16020,7 +16163,11 @@ imdb:tt0000031 imdb:cast-director imdb:nm0525910 .
 imdb:tt0000032 imdb:cast-actress imdb:nm3692479;
   imdb:cast-director imdb:nm0804434 .
 
-_:b2f00e3714564bd2a2adecab33d7abb283 imdb:playedCharacter "The dancer" .
+_:562bd3866b5049f8bd70192e99ab63e183 a rdf:Statement;
+  rdf:subject imdb:tt0000032;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm3692479;
+  imdb:playedCharacter "The dancer" .
 
 imdb:tt0000033 imdb:cast-director imdb:nm0525910 .
 
@@ -16030,15 +16177,20 @@ imdb:tt0000035 imdb:cast-director imdb:nm0617588 .
 
 imdb:tt0000036 imdb:cast-actor imdb:nm0420198;
   imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0410331;
   imdb:cast-cinematographer imdb:nm0005658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb288 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e188 a rdf:Statement;
+  rdf:subject imdb:tt0000036;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
 imdb:cast-writer rdfs:domain imdb:work;
   rdfs:range imdb:writer;
   rdfs:subPropertyOf imdb:cast .
 
-_:b2f00e3714564bd2a2adecab33d7abb290 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e190 a rdf:Statement;
   rdf:subject imdb:tt0000036;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
@@ -16049,13 +16201,27 @@ imdb:tt0000037 imdb:cast-director imdb:nm0617588 .
 imdb:tt0000038 imdb:cast-self imdb:nm2960633, imdb:nm0340719, imdb:nm2958402;
   imdb:cast-director imdb:nm0374658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb293 imdb:playedCharacter "Self - First baseman" .
+_:562bd3866b5049f8bd70192e99ab63e193 a rdf:Statement;
+  rdf:subject imdb:tt0000038;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm2960633;
+  imdb:playedCharacter "Self - First baseman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb294 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e194 a rdf:Statement;
+  rdf:subject imdb:tt0000038;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0340719;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb295 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e195 a rdf:Statement;
+  rdf:subject imdb:tt0000038;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm2958402;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb297 a rdf:Statement;
+imdb:tt0000039 imdb:cast-producer imdb:nm0666972 .
+
+_:562bd3866b5049f8bd70192e99ab63e197 a rdf:Statement;
   rdf:subject imdb:tt0000039;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16063,9 +16229,10 @@ _:b2f00e3714564bd2a2adecab33d7abb297 a rdf:Statement;
 
 imdb:tt0000040 imdb:cast-director imdb:nm0617588 .
 
-imdb:tt0000041 imdb:cast-director imdb:nm0525910 .
+imdb:tt0000041 imdb:cast-director imdb:nm0525910;
+  imdb:cast-producer imdb:nm0525908 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2100 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1100 a rdf:Statement;
   rdf:subject imdb:tt0000041;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0525908;
@@ -16090,7 +16257,11 @@ imdb:tt0000049 imdb:cast-director imdb:nm0010291 .
 imdb:tt0000050 imdb:cast-self imdb:nm3029234;
   imdb:cast-director imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2109 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1109 a rdf:Statement;
+  rdf:subject imdb:tt0000050;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm3029234;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000051 imdb:cast-director imdb:nm0617588 .
 
@@ -16108,14 +16279,26 @@ imdb:tt0000056 imdb:cast-director imdb:nm0795060 .
 imdb:tt0000057 imdb:cast-self imdb:nm0874739, imdb:nm0874746;
   imdb:cast-director imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2118 imdb:playedCharacter "Self (Tsar of Russia)" .
+_:562bd3866b5049f8bd70192e99ab63e1118 a rdf:Statement;
+  rdf:subject imdb:tt0000057;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0874739;
+  imdb:playedCharacter "Self (Tsar of Russia)" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2119 imdb:playedCharacter "Self (Tsarina of Russia)" .
+_:562bd3866b5049f8bd70192e99ab63e1119 a rdf:Statement;
+  rdf:subject imdb:tt0000057;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0874746;
+  imdb:playedCharacter "Self (Tsarina of Russia)" .
 
 imdb:tt0000058 imdb:cast-self imdb:nm0874739;
   imdb:cast-director imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2121 imdb:playedCharacter "Self (Tsar of Russia)" .
+_:562bd3866b5049f8bd70192e99ab63e1121 a rdf:Statement;
+  rdf:subject imdb:tt0000058;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0874739;
+  imdb:playedCharacter "Self (Tsar of Russia)" .
 
 imdb:tt0000059 imdb:cast-director imdb:nm0617588 .
 
@@ -16123,9 +16306,10 @@ imdb:tt0000060 imdb:cast-director imdb:nm0005690;
   imdb:cast-cinematographer imdb:nm0005658 .
 
 imdb:tt0000061 imdb:cast-actress imdb:nm4007970;
-  imdb:cast-director imdb:nm0010291 .
+  imdb:cast-director imdb:nm0010291;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2128 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1128 a rdf:Statement;
   rdf:subject imdb:tt0000061;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16135,19 +16319,35 @@ imdb:tt0000062 imdb:cast-director imdb:nm0617588 .
 
 imdb:tt0000063 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2130 imdb:playedCharacter "Georges Méliès" .
+_:562bd3866b5049f8bd70192e99ab63e1130 a rdf:Statement;
+  rdf:subject imdb:tt0000063;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Georges Méliès" .
 
 imdb:tt0000064 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2131 imdb:playedCharacter "Lightening Sketch Artist" .
+_:562bd3866b5049f8bd70192e99ab63e1131 a rdf:Statement;
+  rdf:subject imdb:tt0000064;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Lightening Sketch Artist" .
 
 imdb:tt0000065 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2132 imdb:playedCharacter "Lightening Sketch Artist" .
+_:562bd3866b5049f8bd70192e99ab63e1132 a rdf:Statement;
+  rdf:subject imdb:tt0000065;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Lightening Sketch Artist" .
 
 imdb:tt0000066 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2133 imdb:playedCharacter "Lightening Sketch Artist" .
+_:562bd3866b5049f8bd70192e99ab63e1133 a rdf:Statement;
+  rdf:subject imdb:tt0000066;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Lightening Sketch Artist" .
 
 imdb:tt0000067 imdb:cast-director imdb:nm0617588 .
 
@@ -16169,17 +16369,30 @@ imdb:tt0000074 imdb:cast-director imdb:nm0617588 .
 imdb:tt0000075 imdb:cast-actress imdb:nm0194945;
   imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2143 imdb:playedCharacter "Woman" .
+_:562bd3866b5049f8bd70192e99ab63e1143 a rdf:Statement;
+  rdf:subject imdb:tt0000075;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0194945;
+  imdb:playedCharacter "Woman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2144 imdb:playedCharacter "Magician" .
+_:562bd3866b5049f8bd70192e99ab63e1144 a rdf:Statement;
+  rdf:subject imdb:tt0000075;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Magician" .
 
 imdb:tt0000076 imdb:cast-actor imdb:nm0420198;
   imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0410331;
   imdb:cast-cinematographer imdb:nm0005658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2145 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e1145 a rdf:Statement;
+  rdf:subject imdb:tt0000076;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2147 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1147 a rdf:Statement;
   rdf:subject imdb:tt0000076;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
@@ -16210,10 +16423,11 @@ imdb:tt0000087 imdb:cast-director imdb:nm0617588 .
 
 imdb:tt0000088 imdb:cast-director imdb:nm0617588 .
 
-imdb:tt0000089 imdb:cast-director imdb:nm0525908, imdb:nm0698645 .
+imdb:tt0000089 imdb:cast-director imdb:nm0525908, imdb:nm0698645;
+  imdb:cast-producer imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2164 rdf:subject imdb:tt0000089;
-  a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1164 a rdf:Statement;
+  rdf:subject imdb:tt0000089;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0525910;
   imdb:jobTitle "producer" .
@@ -16223,11 +16437,23 @@ imdb:tt0000090 imdb:cast-director imdb:nm0617588 .
 imdb:tt0000091 imdb:cast-actress imdb:nm0194945;
   imdb:cast-actor imdb:nm6170115, imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2166 imdb:playedCharacter "Young woman" .
+_:562bd3866b5049f8bd70192e99ab63e1166 a rdf:Statement;
+  rdf:subject imdb:tt0000091;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0194945;
+  imdb:playedCharacter "Young woman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2167 imdb:playedCharacter "Mephistopheles" .
+_:562bd3866b5049f8bd70192e99ab63e1167 a rdf:Statement;
+  rdf:subject imdb:tt0000091;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm6170115;
+  imdb:playedCharacter "Mephistopheles" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2168 imdb:playedCharacter "Mephistopheles" .
+_:562bd3866b5049f8bd70192e99ab63e1168 a rdf:Statement;
+  rdf:subject imdb:tt0000091;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Mephistopheles" .
 
 imdb:tt0000092 imdb:cast-director imdb:nm0617588 .
 
@@ -16236,7 +16462,11 @@ imdb:tt0000093 imdb:cast-director imdb:nm0525908, imdb:nm0525910 .
 imdb:tt0000094 imdb:cast-self imdb:nm9513675;
   imdb:cast-director imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2172 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1172 a rdf:Statement;
+  rdf:subject imdb:tt0000094;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm9513675;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000095 imdb:cast-director imdb:nm0617588 .
 
@@ -16256,7 +16486,9 @@ imdb:tt0000102 imdb:cast-director imdb:nm0617588 .
 
 imdb:tt0000103 imdb:cast-director imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2183 a rdf:Statement;
+imdb:tt0000104 imdb:cast-producer imdb:nm0525910 .
+
+_:562bd3866b5049f8bd70192e99ab63e1183 a rdf:Statement;
   rdf:subject imdb:tt0000104;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0525910;
@@ -16270,11 +16502,16 @@ imdb:tt0000107 imdb:cast-director imdb:nm0617588 .
 
 imdb:tt0000108 imdb:cast-actor imdb:nm0420198;
   imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0410331;
   imdb:cast-cinematographer imdb:nm0005658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2187 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e1187 a rdf:Statement;
+  rdf:subject imdb:tt0000108;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2189 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1189 a rdf:Statement;
   rdf:subject imdb:tt0000108;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
@@ -16282,11 +16519,16 @@ _:b2f00e3714564bd2a2adecab33d7abb2189 a rdf:Statement;
 
 imdb:tt0000109 imdb:cast-actor imdb:nm0420198;
   imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0410331;
   imdb:cast-cinematographer imdb:nm0005658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2191 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e1191 a rdf:Statement;
+  rdf:subject imdb:tt0000109;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2193 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1193 a rdf:Statement;
   rdf:subject imdb:tt0000109;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
@@ -16294,11 +16536,16 @@ _:b2f00e3714564bd2a2adecab33d7abb2193 a rdf:Statement;
 
 imdb:tt0000110 imdb:cast-actor imdb:nm0420198;
   imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0410331;
   imdb:cast-cinematographer imdb:nm0005658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2195 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e1195 a rdf:Statement;
+  rdf:subject imdb:tt0000110;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2197 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1197 a rdf:Statement;
   rdf:subject imdb:tt0000110;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
@@ -16306,11 +16553,16 @@ _:b2f00e3714564bd2a2adecab33d7abb2197 a rdf:Statement;
 
 imdb:tt0000111 imdb:cast-actor imdb:nm0420198;
   imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0410331;
   imdb:cast-cinematographer imdb:nm0005658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2199 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e1199 a rdf:Statement;
+  rdf:subject imdb:tt0000111;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2201 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1201 a rdf:Statement;
   rdf:subject imdb:tt0000111;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
@@ -16318,11 +16570,16 @@ _:b2f00e3714564bd2a2adecab33d7abb2201 a rdf:Statement;
 
 imdb:tt0000112 imdb:cast-actor imdb:nm0420198;
   imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0410331;
   imdb:cast-cinematographer imdb:nm0005658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2203 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e1203 a rdf:Statement;
+  rdf:subject imdb:tt0000112;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2205 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1205 a rdf:Statement;
   rdf:subject imdb:tt0000112;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
@@ -16330,11 +16587,16 @@ _:b2f00e3714564bd2a2adecab33d7abb2205 a rdf:Statement;
 
 imdb:tt0000113 imdb:cast-actor imdb:nm0420198;
   imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0410331;
   imdb:cast-cinematographer imdb:nm0005658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2207 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e1207 a rdf:Statement;
+  rdf:subject imdb:tt0000113;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2209 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1209 a rdf:Statement;
   rdf:subject imdb:tt0000113;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
@@ -16356,15 +16618,28 @@ imdb:tt0000120 imdb:cast-director imdb:nm0617588 .
 
 imdb:tt0000121 imdb:cast-actor imdb:nm0832461;
   imdb:cast-actress imdb:nm0780534, imdb:nm5718242;
-  imdb:cast-director imdb:nm0609678 .
+  imdb:cast-director imdb:nm0609678;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2218 imdb:playedCharacter "The Soldier" .
+_:562bd3866b5049f8bd70192e99ab63e1218 a rdf:Statement;
+  rdf:subject imdb:tt0000121;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0832461;
+  imdb:playedCharacter "The Soldier" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2219 imdb:playedCharacter "The Girl" .
+_:562bd3866b5049f8bd70192e99ab63e1219 a rdf:Statement;
+  rdf:subject imdb:tt0000121;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0780534;
+  imdb:playedCharacter "The Girl" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2220 imdb:playedCharacter "The Woman" .
+_:562bd3866b5049f8bd70192e99ab63e1220 a rdf:Statement;
+  rdf:subject imdb:tt0000121;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm5718242;
+  imdb:playedCharacter "The Woman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2222 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1222 a rdf:Statement;
   rdf:subject imdb:tt0000121;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16374,11 +16649,17 @@ imdb:tt0000122 imdb:cast-director imdb:nm0617588 .
 
 imdb:tt0000123 imdb:cast-self imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2224 imdb:playedCharacter "Self (stage magician)" .
+_:562bd3866b5049f8bd70192e99ab63e1224 a rdf:Statement;
+  rdf:subject imdb:tt0000123;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Self (stage magician)" .
 
 imdb:tt0000124 imdb:cast-director imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2226 a rdf:Statement;
+imdb:tt0000125 imdb:cast-producer imdb:nm0666972 .
+
+_:562bd3866b5049f8bd70192e99ab63e1226 a rdf:Statement;
   rdf:subject imdb:tt0000125;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16396,18 +16677,38 @@ imdb:tt0000130 imdb:cast-director imdb:nm0617588 .
 
 imdb:tt0000131 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2232 imdb:playedCharacter "L'homme qui essaie de dormir" .
+_:562bd3866b5049f8bd70192e99ab63e1232 a rdf:Statement;
+  rdf:subject imdb:tt0000131;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "L'homme qui essaie de dormir" .
 
 imdb:tt0000132 imdb:cast-actress imdb:nm9342429, imdb:nm3029234;
   imdb:cast-actor imdb:nm0577734, imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2233 imdb:playedCharacter "La Serveuse" .
+_:562bd3866b5049f8bd70192e99ab63e1233 a rdf:Statement;
+  rdf:subject imdb:tt0000132;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm9342429;
+  imdb:playedCharacter "La Serveuse" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2234 imdb:playedCharacter "Un joueur de cartes" .
+_:562bd3866b5049f8bd70192e99ab63e1234 a rdf:Statement;
+  rdf:subject imdb:tt0000132;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0577734;
+  imdb:playedCharacter "Un joueur de cartes" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2235 imdb:playedCharacter "Un joueur de cartes" .
+_:562bd3866b5049f8bd70192e99ab63e1235 a rdf:Statement;
+  rdf:subject imdb:tt0000132;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Un joueur de cartes" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2236 imdb:playedCharacter "La petite fille" .
+_:562bd3866b5049f8bd70192e99ab63e1236 a rdf:Statement;
+  rdf:subject imdb:tt0000132;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm3029234;
+  imdb:playedCharacter "La petite fille" .
 
 imdb:tt0000133 imdb:cast-director imdb:nm0617588 .
 
@@ -16418,7 +16719,11 @@ imdb:tt0000137 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000138 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2241 imdb:playedCharacter "Inn Guest" .
+_:562bd3866b5049f8bd70192e99ab63e1241 a rdf:Statement;
+  rdf:subject imdb:tt0000138;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Inn Guest" .
 
 imdb:tt0000139 imdb:cast-director imdb:nm0349785 .
 
@@ -16440,23 +16745,44 @@ imdb:tt0000146 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000147 imdb:cast-self imdb:nm0179163, imdb:nm0280615, imdb:nm4082222, imdb:nm4081458,
     imdb:nm2256592;
-  imdb:cast-director imdb:nm0714557 .
+  imdb:cast-director imdb:nm0714557;
+  imdb:cast-producer imdb:nm0103755 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2252 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1252 a rdf:Statement;
+  rdf:subject imdb:tt0000147;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0179163;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2253 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1253 a rdf:Statement;
+  rdf:subject imdb:tt0000147;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0280615;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2254 imdb:playedCharacter "Self - Sullivan's Manager" .
+_:562bd3866b5049f8bd70192e99ab63e1254 a rdf:Statement;
+  rdf:subject imdb:tt0000147;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm4082222;
+  imdb:playedCharacter "Self - Sullivan's Manager" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2255 imdb:playedCharacter "Self - Referee" .
+_:562bd3866b5049f8bd70192e99ab63e1255 a rdf:Statement;
+  rdf:subject imdb:tt0000147;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm4081458;
+  imdb:playedCharacter "Self - Referee" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2257 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1257 a rdf:Statement;
   rdf:subject imdb:tt0000147;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0103755;
   imdb:jobTitle "producer" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2258 imdb:playedCharacter "Self - Master of Ceremonies" .
+_:562bd3866b5049f8bd70192e99ab63e1258 a rdf:Statement;
+  rdf:subject imdb:tt0000147;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm2256592;
+  imdb:playedCharacter "Self - Master of Ceremonies" .
 
 imdb:tt0000148 imdb:cast-director imdb:nm0349785 .
 
@@ -16483,9 +16809,10 @@ imdb:tt0000158 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000159 imdb:cast-director imdb:nm0617588 .
 
-imdb:tt0000160 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000160 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2273 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1273 a rdf:Statement;
   rdf:subject imdb:tt0000160;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16493,15 +16820,16 @@ _:b2f00e3714564bd2a2adecab33d7abb2273 a rdf:Statement;
 
 imdb:tt0000161 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000162 imdb:cast-director imdb:nm0698645 .
+imdb:tt0000162 imdb:cast-director imdb:nm0698645;
+  imdb:cast-producer imdb:nm0525908, imdb:nm0525910 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2276 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1276 a rdf:Statement;
   rdf:subject imdb:tt0000162;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0525908;
   imdb:jobTitle "producer" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2277 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1277 a rdf:Statement;
   rdf:subject imdb:tt0000162;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0525910;
@@ -16521,9 +16849,10 @@ imdb:tt0000167 imdb:cast-director imdb:nm0422809 .
 
 imdb:tt0000168 imdb:cast-director imdb:nm0005717 .
 
-imdb:tt0000169 imdb:cast-director imdb:nm0698645 .
+imdb:tt0000169 imdb:cast-director imdb:nm0698645;
+  imdb:cast-producer imdb:nm0677318 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2290 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1290 a rdf:Statement;
   rdf:subject imdb:tt0000169;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0677318;
@@ -16537,26 +16866,41 @@ imdb:tt0000172 imdb:cast-actress imdb:nm0809419;
   imdb:cast-actor imdb:nm0338379;
   imdb:cast-director imdb:nm0808310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2294 imdb:playedCharacter "Professor" .
+_:562bd3866b5049f8bd70192e99ab63e1294 a rdf:Statement;
+  rdf:subject imdb:tt0000172;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0338379;
+  imdb:playedCharacter "Professor" .
 
 imdb:tt0000173 imdb:cast-director imdb:nm0085865 .
 
 imdb:tt0000174 imdb:cast-actor imdb:nm0841389, imdb:nm1024447;
   imdb:cast-director imdb:nm0471818 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2297 imdb:playedCharacter "Sausage Vendor" .
+_:562bd3866b5049f8bd70192e99ab63e1297 a rdf:Statement;
+  rdf:subject imdb:tt0000174;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0841389;
+  imdb:playedCharacter "Sausage Vendor" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2298 imdb:playedCharacter "Sticker" .
+_:562bd3866b5049f8bd70192e99ab63e1298 a rdf:Statement;
+  rdf:subject imdb:tt0000174;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1024447;
+  imdb:playedCharacter "Sticker" .
 
-imdb:tt0000175 imdb:cast-director imdb:nm0795060 .
+imdb:tt0000175 imdb:cast-director imdb:nm0795060;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2301 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1301 a rdf:Statement;
   rdf:subject imdb:tt0000175;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
   imdb:jobTitle "producer" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2302 a rdf:Statement;
+imdb:tt0000176 imdb:cast-producer imdb:nm0666972 .
+
+_:562bd3866b5049f8bd70192e99ab63e1302 a rdf:Statement;
   rdf:subject imdb:tt0000176;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16565,7 +16909,11 @@ _:b2f00e3714564bd2a2adecab33d7abb2302 a rdf:Statement;
 imdb:tt0000177 imdb:cast-actor imdb:nm0085865;
   imdb:cast-cinematographer imdb:nm0807236 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2303 imdb:playedCharacter "The Burglar" .
+_:562bd3866b5049f8bd70192e99ab63e1303 a rdf:Statement;
+  rdf:subject imdb:tt0000177;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0085865;
+  imdb:playedCharacter "The Burglar" .
 
 imdb:tt0000178 imdb:cast-director imdb:nm0692105 .
 
@@ -16574,11 +16922,16 @@ imdb:tt0000179 imdb:cast-director imdb:nm0617588 .
 imdb:tt0000180 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000181 imdb:cast-actress imdb:nm0809419;
-  imdb:cast-director imdb:nm0808310 .
+  imdb:cast-director imdb:nm0808310;
+  imdb:cast-writer imdb:nm0674518 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2308 imdb:playedCharacter "Cinderella" .
+_:562bd3866b5049f8bd70192e99ab63e1308 a rdf:Statement;
+  rdf:subject imdb:tt0000181;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0809419;
+  imdb:playedCharacter "Cinderella" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2310 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1310 a rdf:Statement;
   rdf:subject imdb:tt0000181;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0674518;
@@ -16586,9 +16939,10 @@ _:b2f00e3714564bd2a2adecab33d7abb2310 a rdf:Statement;
 
 imdb:tt0000182 imdb:cast-director imdb:nm0666972 .
 
-imdb:tt0000183 imdb:cast-director imdb:nm0808310 .
+imdb:tt0000183 imdb:cast-director imdb:nm0808310;
+  imdb:cast-writer imdb:nm0241416 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2313 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1313 a rdf:Statement;
   rdf:subject imdb:tt0000183;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0241416;
@@ -16609,19 +16963,32 @@ imdb:tt0000189 imdb:cast-director imdb:nm0005717 .
 imdb:tt0000190 imdb:cast-actor imdb:nm0841389, imdb:nm1024447;
   imdb:cast-director imdb:nm0471818 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2320 imdb:playedCharacter "Old Philanderer" .
+_:562bd3866b5049f8bd70192e99ab63e1320 a rdf:Statement;
+  rdf:subject imdb:tt0000190;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0841389;
+  imdb:playedCharacter "Old Philanderer" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2321 imdb:playedCharacter "Man with Broom" .
+_:562bd3866b5049f8bd70192e99ab63e1321 a rdf:Statement;
+  rdf:subject imdb:tt0000190;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1024447;
+  imdb:playedCharacter "Man with Broom" .
 
 imdb:tt0000191 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000192 imdb:cast-self imdb:nm0518132;
   imdb:cast-director imdb:nm0924920;
+  imdb:cast-writer imdb:nm0238900;
   imdb:cast-cinematographer imdb:nm0374658 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2324 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1324 a rdf:Statement;
+  rdf:subject imdb:tt0000192;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0518132;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2326 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1326 a rdf:Statement;
   rdf:subject imdb:tt0000192;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0238900;
@@ -16633,9 +17000,10 @@ imdb:tt0000194 imdb:cast-director imdb:nm0378408 .
 
 imdb:tt0000195 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000196 imdb:cast-director imdb:nm0808310 .
+imdb:tt0000196 imdb:cast-director imdb:nm0808310;
+  imdb:cast-writer imdb:nm0324473 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2332 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1332 a rdf:Statement;
   rdf:subject imdb:tt0000196;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0324473;
@@ -16645,7 +17013,9 @@ imdb:tt0000197 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000198 imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2335 a rdf:Statement;
+imdb:tt0000199 imdb:cast-producer imdb:nm0666972 .
+
+_:562bd3866b5049f8bd70192e99ab63e1335 a rdf:Statement;
   rdf:subject imdb:tt0000199;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16653,14 +17023,23 @@ _:b2f00e3714564bd2a2adecab33d7abb2335 a rdf:Statement;
 
 imdb:tt0000200 imdb:cast-self imdb:nm1380868 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2336 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1336 a rdf:Statement;
+  rdf:subject imdb:tt0000200;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm1380868;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000201 imdb:cast-self imdb:nm0168621;
-  imdb:cast-director imdb:nm0005690 .
+  imdb:cast-director imdb:nm0005690;
+  imdb:cast-producer imdb:nm0249379 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2337 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1337 a rdf:Statement;
+  rdf:subject imdb:tt0000201;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0168621;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2339 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1339 a rdf:Statement;
   rdf:subject imdb:tt0000201;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0249379;
@@ -16676,7 +17055,9 @@ imdb:tt0000205 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000206 imdb:cast-director imdb:nm0005717 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2345 a rdf:Statement;
+imdb:tt0000207 imdb:cast-producer imdb:nm0666972 .
+
+_:562bd3866b5049f8bd70192e99ab63e1345 a rdf:Statement;
   rdf:subject imdb:tt0000207;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16691,19 +17072,32 @@ imdb:tt0000210 imdb:cast-actor imdb:nm0617588 .
 imdb:tt0000211 imdb:cast-actress imdb:nm0194945;
   imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2349 imdb:playedCharacter "Phoebe - la bonne fée" .
+_:562bd3866b5049f8bd70192e99ab63e1349 a rdf:Statement;
+  rdf:subject imdb:tt0000211;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0194945;
+  imdb:playedCharacter "Phoebe - la bonne fée" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2350 imdb:playedCharacter "L'astronome" .
+_:562bd3866b5049f8bd70192e99ab63e1350 a rdf:Statement;
+  rdf:subject imdb:tt0000211;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "L'astronome" .
 
 imdb:tt0000212 imdb:cast-director imdb:nm0795060 .
 
 imdb:tt0000213 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000214 imdb:cast-actor imdb:nm0085865 .
+imdb:tt0000214 imdb:cast-actor imdb:nm0085865;
+  imdb:cast-producer imdb:nm0807236 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2353 imdb:playedCharacter "Hand that tears down the Spanish flag" .
+_:562bd3866b5049f8bd70192e99ab63e1353 a rdf:Statement;
+  rdf:subject imdb:tt0000214;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0085865;
+  imdb:playedCharacter "Hand that tears down the Spanish flag" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2354 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1354 a rdf:Statement;
   rdf:subject imdb:tt0000214;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0807236;
@@ -16715,19 +17109,33 @@ imdb:tt0000215 imdb:cast-actor imdb:nm0841389;
 imdb:tt0000216 imdb:cast-self imdb:nm1997201, imdb:nm0454367;
   imdb:cast-director imdb:nm0005717 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2357 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1357 a rdf:Statement;
+  rdf:subject imdb:tt0000216;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm1997201;
+  imdb:playedCharacter "Self" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2358 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1358 a rdf:Statement;
+  rdf:subject imdb:tt0000216;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0454367;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000217 imdb:cast-director imdb:nm0808310 .
 
 imdb:tt0000218 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2361 imdb:playedCharacter "Fernand Labori" .
+_:562bd3866b5049f8bd70192e99ab63e1361 a rdf:Statement;
+  rdf:subject imdb:tt0000218;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Fernand Labori" .
 
 imdb:tt0000219 imdb:cast-director imdb:nm0808310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2363 a rdf:Statement;
+imdb:tt0000220 imdb:cast-producer imdb:nm0666972 .
+
+_:562bd3866b5049f8bd70192e99ab63e1363 a rdf:Statement;
   rdf:subject imdb:tt0000220;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16739,27 +17147,34 @@ imdb:tt0000222 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000223 imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2367 a rdf:Statement;
+imdb:tt0000224 imdb:cast-producer imdb:nm0666972 .
+
+_:562bd3866b5049f8bd70192e99ab63e1367 a rdf:Statement;
   rdf:subject imdb:tt0000224;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
   imdb:jobTitle "producer" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2368 a rdf:Statement;
+imdb:tt0000225 imdb:cast-writer imdb:nm0207305 .
+
+_:562bd3866b5049f8bd70192e99ab63e1368 a rdf:Statement;
   rdf:subject imdb:tt0000225;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0207305;
   imdb:jobTitle "story" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2369 a rdf:Statement;
+imdb:tt0000226 imdb:cast-producer imdb:nm0378408 .
+
+_:562bd3866b5049f8bd70192e99ab63e1369 a rdf:Statement;
   rdf:subject imdb:tt0000226;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0378408;
   imdb:jobTitle "producer" .
 
-imdb:tt0000227 imdb:cast-director imdb:nm4427898 .
+imdb:tt0000227 imdb:cast-director imdb:nm4427898;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2371 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1371 a rdf:Statement;
   rdf:subject imdb:tt0000227;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16767,43 +17182,67 @@ _:b2f00e3714564bd2a2adecab33d7abb2371 a rdf:Statement;
 
 imdb:tt0000228 imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2373 a rdf:Statement;
+imdb:tt0000229 imdb:cast-writer imdb:nm0857203;
+  imdb:cast-producer imdb:nm0924920;
+  imdb:cast-composer imdb:nm0595213 .
+
+_:562bd3866b5049f8bd70192e99ab63e1373 a rdf:Statement;
   rdf:subject imdb:tt0000229;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0857203;
   imdb:jobTitle "poem" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2374 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1374 a rdf:Statement;
   rdf:subject imdb:tt0000229;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0924920;
   imdb:jobTitle "producer" .
 
-imdb:tt0000229 imdb:cast-composer imdb:nm0595213 .
-
 imdb:tt0000230 imdb:cast-actress imdb:nm1333156, imdb:nm0076933, imdb:nm0194945;
   imdb:cast-actor imdb:nm1778224, imdb:nm1778292;
-  imdb:cast-director imdb:nm0617588 .
+  imdb:cast-director imdb:nm0617588;
+  imdb:cast-writer imdb:nm0674518 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2376 imdb:playedCharacter "Cinderella" .
+_:562bd3866b5049f8bd70192e99ab63e1376 a rdf:Statement;
+  rdf:subject imdb:tt0000230;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm1333156;
+  imdb:playedCharacter "Cinderella" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2377 imdb:playedCharacter "The Fairy Godmother" .
+_:562bd3866b5049f8bd70192e99ab63e1377 a rdf:Statement;
+  rdf:subject imdb:tt0000230;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0076933;
+  imdb:playedCharacter "The Fairy Godmother" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2378 imdb:playedCharacter "Prince Charming" .
+_:562bd3866b5049f8bd70192e99ab63e1378 a rdf:Statement;
+  rdf:subject imdb:tt0000230;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1778224;
+  imdb:playedCharacter "Prince Charming" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2379 imdb:playedCharacter "Fairy Godmother" .
+_:562bd3866b5049f8bd70192e99ab63e1379 a rdf:Statement;
+  rdf:subject imdb:tt0000230;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0194945;
+  imdb:playedCharacter "Fairy Godmother" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2381 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1381 a rdf:Statement;
   rdf:subject imdb:tt0000230;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0674518;
   imdb:jobTitle "story \"Cinderella\"" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2382 imdb:playedCharacter "Party Guest" .
+_:562bd3866b5049f8bd70192e99ab63e1382 a rdf:Statement;
+  rdf:subject imdb:tt0000230;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1778292;
+  imdb:playedCharacter "Party Guest" .
 
-imdb:tt0000231 imdb:cast-director imdb:nm0795060 .
+imdb:tt0000231 imdb:cast-director imdb:nm0795060;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2384 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1384 a rdf:Statement;
   rdf:subject imdb:tt0000231;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16816,18 +17255,35 @@ imdb:tt0000233 imdb:cast-director imdb:nm0005717 .
 imdb:tt0000234 imdb:cast-actress imdb:nm0194945;
   imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2387 imdb:playedCharacter "Cleopatre" .
+_:562bd3866b5049f8bd70192e99ab63e1387 a rdf:Statement;
+  rdf:subject imdb:tt0000234;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0194945;
+  imdb:playedCharacter "Cleopatre" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2388 imdb:playedCharacter "Tomb Digger" .
+_:562bd3866b5049f8bd70192e99ab63e1388 a rdf:Statement;
+  rdf:subject imdb:tt0000234;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Tomb Digger" .
 
 imdb:tt0000235 imdb:cast-actress imdb:nm0194945;
-  imdb:cast-actor imdb:nm0617588 .
+  imdb:cast-actor imdb:nm0617588;
+  imdb:cast-writer imdb:nm0353584 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2389 imdb:playedCharacter "Ayesha" .
+_:562bd3866b5049f8bd70192e99ab63e1389 a rdf:Statement;
+  rdf:subject imdb:tt0000235;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0194945;
+  imdb:playedCharacter "Ayesha" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2390 imdb:playedCharacter "The Devil" .
+_:562bd3866b5049f8bd70192e99ab63e1390 a rdf:Statement;
+  rdf:subject imdb:tt0000235;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "The Devil" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2391 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1391 a rdf:Statement;
   rdf:subject imdb:tt0000235;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0353584;
@@ -16842,7 +17298,11 @@ imdb:tt0000238 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000239 imdb:cast-self imdb:nm0298291;
   imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2395 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1395 a rdf:Statement;
+  rdf:subject imdb:tt0000239;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0298291;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000240 imdb:cast-cinematographer imdb:nm0005658, imdb:nm0555522 .
 
@@ -16850,13 +17310,19 @@ imdb:tt0000241 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000242 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2400 imdb:playedCharacter "The Devil" .
+_:562bd3866b5049f8bd70192e99ab63e1400 a rdf:Statement;
+  rdf:subject imdb:tt0000242;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "The Devil" .
 
 imdb:tt0000243 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000244 imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2403 a rdf:Statement;
+imdb:tt0000245 imdb:cast-producer imdb:nm0002615 .
+
+_:562bd3866b5049f8bd70192e99ab63e1403 a rdf:Statement;
   rdf:subject imdb:tt0000245;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0002615;
@@ -16864,7 +17330,11 @@ _:b2f00e3714564bd2a2adecab33d7abb2403 a rdf:Statement;
 
 imdb:tt0000246 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2404 imdb:playedCharacter "Magician" .
+_:562bd3866b5049f8bd70192e99ab63e1404 a rdf:Statement;
+  rdf:subject imdb:tt0000246;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Magician" .
 
 imdb:cast-production_designer rdfs:domain imdb:work;
   rdfs:range imdb:production_designer;
@@ -16873,17 +17343,34 @@ imdb:cast-production_designer rdfs:domain imdb:work;
 imdb:tt0000247 imdb:cast-production_designer imdb:nm6010696;
   imdb:cast-actor imdb:nm0002504, imdb:nm0784327, imdb:nm2259742, imdb:nm0924893;
   imdb:cast-director imdb:nm2156608, imdb:nm0005690;
+  imdb:cast-writer imdb:nm0000636;
   imdb:cast-composer imdb:nm0744231, imdb:nm6114857 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2406 imdb:playedCharacter "King John" .
+_:562bd3866b5049f8bd70192e99ab63e1406 a rdf:Statement;
+  rdf:subject imdb:tt0000247;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0002504;
+  imdb:playedCharacter "King John" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2407 imdb:playedCharacter "Prince Henry" .
+_:562bd3866b5049f8bd70192e99ab63e1407 a rdf:Statement;
+  rdf:subject imdb:tt0000247;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0784327;
+  imdb:playedCharacter "Prince Henry" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2408 imdb:playedCharacter "Arthur" .
+_:562bd3866b5049f8bd70192e99ab63e1408 a rdf:Statement;
+  rdf:subject imdb:tt0000247;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2259742;
+  imdb:playedCharacter "Arthur" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2409 imdb:playedCharacter "Earl of Pembroke" .
+_:562bd3866b5049f8bd70192e99ab63e1409 a rdf:Statement;
+  rdf:subject imdb:tt0000247;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0924893;
+  imdb:playedCharacter "Earl of Pembroke" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2412 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1412 a rdf:Statement;
   rdf:subject imdb:tt0000247;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0000636;
@@ -16892,9 +17379,17 @@ _:b2f00e3714564bd2a2adecab33d7abb2412 a rdf:Statement;
 imdb:tt0000248 imdb:cast-actress imdb:nm0809419;
   imdb:cast-actor imdb:nm0808310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2415 imdb:playedCharacter "Wife" .
+_:562bd3866b5049f8bd70192e99ab63e1415 a rdf:Statement;
+  rdf:subject imdb:tt0000248;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0809419;
+  imdb:playedCharacter "Wife" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2416 imdb:playedCharacter "Husband" .
+_:562bd3866b5049f8bd70192e99ab63e1416 a rdf:Statement;
+  rdf:subject imdb:tt0000248;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0808310;
+  imdb:playedCharacter "Husband" .
 
 imdb:tt0000249 imdb:cast-director imdb:nm0808310 .
 
@@ -16904,9 +17399,10 @@ imdb:tt0000251 imdb:cast-director imdb:nm0177862 .
 
 imdb:tt0000252 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000253 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000253 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2422 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1422 a rdf:Statement;
   rdf:subject imdb:tt0000253;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -16928,18 +17424,30 @@ imdb:tt0000260 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000261 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2430 imdb:playedCharacter "The Sleeping Man" .
+_:562bd3866b5049f8bd70192e99ab63e1430 a rdf:Statement;
+  rdf:subject imdb:tt0000261;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "The Sleeping Man" .
 
 imdb:tt0000262 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000264 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2432 imdb:playedCharacter "L'illusioniste" .
+_:562bd3866b5049f8bd70192e99ab63e1432 a rdf:Statement;
+  rdf:subject imdb:tt0000264;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "L'illusioniste" .
 
 imdb:tt0000265 imdb:cast-actor imdb:nm0335788;
   imdb:cast-cinematographer imdb:nm0035502 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2433 imdb:playedCharacter "Chimmie Hicks" .
+_:562bd3866b5049f8bd70192e99ab63e1433 a rdf:Statement;
+  rdf:subject imdb:tt0000265;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0335788;
+  imdb:playedCharacter "Chimmie Hicks" .
 
 imdb:tt0000266 imdb:cast-cinematographer imdb:nm0035502 .
 
@@ -16955,15 +17463,28 @@ imdb:tt0000271 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000272 imdb:cast-director imdb:nm0808310 .
 
-imdb:tt0000273 imdb:cast-actor imdb:nm1040375, imdb:nm1894886;
-  imdb:cast-actress imdb:nm1895457;
+imdb:tt0000273 imdb:cast-actor imdb:nm1040375, imdb:nm1894886 .
+
+_:562bd3866b5049f8bd70192e99ab63e1442 a rdf:Statement;
+  rdf:subject imdb:tt0000273;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1040375;
+  imdb:playedCharacter "The Officer" .
+
+_:562bd3866b5049f8bd70192e99ab63e1443 rdf:subject imdb:tt0000273;
+  a rdf:Statement;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1894886;
+  imdb:playedCharacter "The Missionary" .
+
+imdb:tt0000273 imdb:cast-actress imdb:nm1895457;
   imdb:cast-director imdb:nm0932055 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2442 imdb:playedCharacter "The Officer" .
-
-_:b2f00e3714564bd2a2adecab33d7abb2443 imdb:playedCharacter "The Missionary" .
-
-_:b2f00e3714564bd2a2adecab33d7abb2444 imdb:playedCharacter "The Girl" .
+_:562bd3866b5049f8bd70192e99ab63e1444 a rdf:Statement;
+  rdf:subject imdb:tt0000273;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm1895457;
+  imdb:playedCharacter "The Girl" .
 
 imdb:tt0000274 imdb:cast-director imdb:nm0349785 .
 
@@ -16975,7 +17496,11 @@ imdb:tt0000277 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000278 imdb:cast-self imdb:nm0168621 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2450 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1450 a rdf:Statement;
+  rdf:subject imdb:tt0000278;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0168621;
+  imdb:playedCharacter "Self" .
 
 imdb:tt0000279 imdb:cast-actor imdb:nm0168621;
   imdb:cast-cinematographer imdb:nm0555522 .
@@ -16992,9 +17517,10 @@ imdb:tt0000283 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000284 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000285 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000285 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2461 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1461 a rdf:Statement;
   rdf:subject imdb:tt0000285;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17023,7 +17549,11 @@ imdb:tt0000295 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000296 imdb:cast-actress imdb:nm10501864;
   imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2473 imdb:playedCharacter "Dancer" .
+_:562bd3866b5049f8bd70192e99ab63e1473 a rdf:Statement;
+  rdf:subject imdb:tt0000296;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm10501864;
+  imdb:playedCharacter "Dancer" .
 
 imdb:tt0000297 imdb:cast-director imdb:nm0349785 .
 
@@ -17031,19 +17561,25 @@ imdb:tt0000298 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000299 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000300 imdb:cast-actor imdb:nm0085865 .
+imdb:tt0000300 imdb:cast-actor imdb:nm0085865;
+  imdb:cast-producer imdb:nm0807236 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2478 imdb:playedCharacter "Chalk-Talk Artist" .
+_:562bd3866b5049f8bd70192e99ab63e1478 a rdf:Statement;
+  rdf:subject imdb:tt0000300;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0085865;
+  imdb:playedCharacter "Chalk-Talk Artist" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2479 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1479 a rdf:Statement;
   rdf:subject imdb:tt0000300;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0807236;
   imdb:jobTitle "producer" .
 
-imdb:tt0000301 imdb:cast-director imdb:nm0692105 .
+imdb:tt0000301 imdb:cast-director imdb:nm0692105;
+  imdb:cast-writer imdb:nm0324473 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2481 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1481 a rdf:Statement;
   rdf:subject imdb:tt0000301;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0324473;
@@ -17056,38 +17592,61 @@ imdb:tt0000303 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000304 imdb:cast-actor imdb:nm2940072;
   imdb:cast-director imdb:nm0808310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2484 imdb:playedCharacter "Willy - the little grandson" .
+_:562bd3866b5049f8bd70192e99ab63e1484 a rdf:Statement;
+  rdf:subject imdb:tt0000304;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2940072;
+  imdb:playedCharacter "Willy - the little grandson" .
 
 imdb:tt0000305 imdb:cast-actress imdb:nm0112631;
   imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000306 imdb:cast-actress imdb:nm0076800, imdb:nm1267013;
   imdb:cast-actor imdb:nm0536252;
-  imdb:cast-director imdb:nm0561109 .
+  imdb:cast-director imdb:nm0561109;
+  imdb:cast-writer imdb:nm0000636;
+  imdb:cast-producer imdb:nm5670483 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2488 imdb:playedCharacter "Hamlet" .
+_:562bd3866b5049f8bd70192e99ab63e1488 a rdf:Statement;
+  rdf:subject imdb:tt0000306;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0076800;
+  imdb:playedCharacter "Hamlet" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2489 imdb:playedCharacter "Laertes" .
+_:562bd3866b5049f8bd70192e99ab63e1489 a rdf:Statement;
+  rdf:subject imdb:tt0000306;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0536252;
+  imdb:playedCharacter "Laertes" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2490 imdb:playedCharacter "A page" .
+_:562bd3866b5049f8bd70192e99ab63e1490 a rdf:Statement;
+  rdf:subject imdb:tt0000306;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm1267013;
+  imdb:playedCharacter "A page" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2492 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1492 a rdf:Statement;
   rdf:subject imdb:tt0000306;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0000636;
   imdb:jobTitle "play \"Hamlet\"" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2493 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1493 a rdf:Statement;
   rdf:subject imdb:tt0000306;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm5670483;
   imdb:jobTitle "producer" .
 
-imdb:tt0000307 imdb:cast-actor imdb:nm0085865 .
+imdb:tt0000307 imdb:cast-actor imdb:nm0085865;
+  imdb:cast-writer imdb:nm1112850 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2494 imdb:playedCharacter "Happy Hooligan" .
+_:562bd3866b5049f8bd70192e99ab63e1494 a rdf:Statement;
+  rdf:subject imdb:tt0000307;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0085865;
+  imdb:playedCharacter "Happy Hooligan" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2495 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1495 a rdf:Statement;
   rdf:subject imdb:tt0000307;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm1112850;
@@ -17097,22 +17656,42 @@ imdb:tt0000308 imdb:cast-actress imdb:nm2940350;
   imdb:cast-actor imdb:nm2940072;
   imdb:cast-director imdb:nm0808310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2496 imdb:playedCharacter "Little girl" .
+_:562bd3866b5049f8bd70192e99ab63e1496 a rdf:Statement;
+  rdf:subject imdb:tt0000308;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm2940350;
+  imdb:playedCharacter "Little girl" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2497 imdb:playedCharacter "Little brother" .
+_:562bd3866b5049f8bd70192e99ab63e1497 a rdf:Statement;
+  rdf:subject imdb:tt0000308;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2940072;
+  imdb:playedCharacter "Little brother" .
 
 imdb:tt0000309 imdb:cast-actress imdb:nm0164281;
   imdb:cast-actor imdb:nm0378408 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2499 imdb:playedCharacter "Passenger" .
+_:562bd3866b5049f8bd70192e99ab63e1499 a rdf:Statement;
+  rdf:subject imdb:tt0000309;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0164281;
+  imdb:playedCharacter "Passenger" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2500 imdb:playedCharacter "Driver" .
+_:562bd3866b5049f8bd70192e99ab63e1500 a rdf:Statement;
+  rdf:subject imdb:tt0000309;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0378408;
+  imdb:playedCharacter "Driver" .
 
 imdb:tt0000310 imdb:cast-actor imdb:nm0335788;
   imdb:cast-actress imdb:nm0151209;
   imdb:cast-cinematographer imdb:nm0035502 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2501 imdb:playedCharacter "Chimmie Hicks" .
+_:562bd3866b5049f8bd70192e99ab63e1501 a rdf:Statement;
+  rdf:subject imdb:tt0000310;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0335788;
+  imdb:playedCharacter "Chimmie Hicks" .
 
 imdb:tt0000312 imdb:cast-director imdb:nm0349785 .
 
@@ -17120,9 +17699,17 @@ imdb:tt0000313 imdb:cast-actress imdb:nm0809419;
   imdb:cast-actor imdb:nm0338379;
   imdb:cast-director imdb:nm0808310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2505 imdb:playedCharacter "Young woman" .
+_:562bd3866b5049f8bd70192e99ab63e1505 a rdf:Statement;
+  rdf:subject imdb:tt0000313;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0809419;
+  imdb:playedCharacter "Young woman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2506 imdb:playedCharacter "Man" .
+_:562bd3866b5049f8bd70192e99ab63e1506 a rdf:Statement;
+  rdf:subject imdb:tt0000313;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0338379;
+  imdb:playedCharacter "Man" .
 
 imdb:tt0000314 imdb:cast-director imdb:nm0349785 .
 
@@ -17135,7 +17722,11 @@ imdb:tt0000317 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000318 imdb:cast-actor imdb:nm13155558, imdb:nm0804433;
   imdb:cast-director imdb:nm0804434 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2513 imdb:playedCharacter "Koechin" .
+_:562bd3866b5049f8bd70192e99ab63e1513 a rdf:Statement;
+  rdf:subject imdb:tt0000318;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0804433;
+  imdb:playedCharacter "Koechin" .
 
 imdb:tt0000319 imdb:cast-actor imdb:nm1272063, imdb:nm1272675;
   imdb:cast-director imdb:nm0793094 .
@@ -17176,13 +17767,23 @@ imdb:tt0000335 imdb:cast-actress imdb:nm1010955;
   imdb:cast-actor imdb:nm1012612, imdb:nm1011210, imdb:nm1012621, imdb:nm0675239, imdb:nm0675260;
   imdb:cast-director imdb:nm0095714, imdb:nm0675140 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2541 imdb:playedCharacter "Lion" .
+_:562bd3866b5049f8bd70192e99ab63e1541 a rdf:Statement;
+  rdf:subject imdb:tt0000335;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0675239;
+  imdb:playedCharacter "Lion" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2542 imdb:playedCharacter "Lion" .
+_:562bd3866b5049f8bd70192e99ab63e1542 a rdf:Statement;
+  rdf:subject imdb:tt0000335;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0675260;
+  imdb:playedCharacter "Lion" .
 
 imdb:tt0000336 imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2544 a rdf:Statement;
+imdb:tt0000337 imdb:cast-producer imdb:nm0525910 .
+
+_:562bd3866b5049f8bd70192e99ab63e1544 a rdf:Statement;
   rdf:subject imdb:tt0000337;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0525910;
@@ -17195,12 +17796,20 @@ imdb:tt0000339 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000340 imdb:cast-actor imdb:nm0542567;
   imdb:cast-director imdb:nm0692105 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2547 imdb:playedCharacter "Uncle Josh" .
+_:562bd3866b5049f8bd70192e99ab63e1547 a rdf:Statement;
+  rdf:subject imdb:tt0000340;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0542567;
+  imdb:playedCharacter "Uncle Josh" .
 
 imdb:tt0000341 imdb:cast-actor imdb:nm0542567;
   imdb:cast-director imdb:nm0692105 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2549 imdb:playedCharacter "Uncle Josh" .
+_:562bd3866b5049f8bd70192e99ab63e1549 a rdf:Statement;
+  rdf:subject imdb:tt0000341;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0542567;
+  imdb:playedCharacter "Uncle Josh" .
 
 imdb:tt0000342 imdb:cast-director imdb:nm0349785 .
 
@@ -17217,9 +17826,10 @@ imdb:tt0000347 imdb:cast-actor imdb:nm0168621;
 
 imdb:tt0000348 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000349 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000349 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2560 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1560 a rdf:Statement;
   rdf:subject imdb:tt0000349;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17240,9 +17850,10 @@ imdb:tt0000355 imdb:cast-director imdb:nm0932055 .
 
 imdb:tt0000356 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000357 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000357 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2571 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1571 a rdf:Statement;
   rdf:subject imdb:tt0000357;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17252,22 +17863,35 @@ imdb:tt0000358 imdb:cast-actor imdb:nm0509806, imdb:nm1778194, imdb:nm0954087 .
 
 imdb:tt0000359 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2575 imdb:playedCharacter "The Chemist", "The India Rubber Head" .
+_:562bd3866b5049f8bd70192e99ab63e1575 a rdf:Statement;
+  rdf:subject imdb:tt0000359;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "The Chemist", "The India Rubber Head" .
 
 imdb:tt0000360 imdb:cast-actress imdb:nm0462306, imdb:nm0815907;
   imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2576 imdb:playedCharacter "La Grisette" .
+_:562bd3866b5049f8bd70192e99ab63e1576 a rdf:Statement;
+  rdf:subject imdb:tt0000360;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0462306;
+  imdb:playedCharacter "La Grisette" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2577 imdb:playedCharacter "Le Hussard" .
+_:562bd3866b5049f8bd70192e99ab63e1577 a rdf:Statement;
+  rdf:subject imdb:tt0000360;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0815907;
+  imdb:playedCharacter "Le Hussard" .
 
 imdb:tt0000361 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000362 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000363 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000363 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2582 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1582 a rdf:Statement;
   rdf:subject imdb:tt0000363;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17283,11 +17907,16 @@ imdb:tt0000366 imdb:cast-director imdb:nm0182052 .
 imdb:tt0000367 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000368 imdb:cast-actress imdb:nm1089829;
-  imdb:cast-director imdb:nm0617588 .
+  imdb:cast-director imdb:nm0617588;
+  imdb:cast-writer imdb:nm0674518 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2588 imdb:playedCharacter "Little Red Riding Hood" .
+_:562bd3866b5049f8bd70192e99ab63e1588 a rdf:Statement;
+  rdf:subject imdb:tt0000368;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm1089829;
+  imdb:playedCharacter "Little Red Riding Hood" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2590 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1590 a rdf:Statement;
   rdf:subject imdb:tt0000368;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0674518;
@@ -17296,23 +17925,29 @@ _:b2f00e3714564bd2a2adecab33d7abb2590 a rdf:Statement;
 imdb:tt0000369 imdb:cast-director imdb:nm0005717 .
 
 imdb:tt0000370 imdb:cast-actor imdb:nm8709803;
-  imdb:cast-director imdb:nm0095816 .
+  imdb:cast-director imdb:nm0095816;
+  imdb:cast-writer imdb:nm1304340, imdb:nm0002042;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2592 imdb:playedCharacter "Ebenezer Scrooge" .
+_:562bd3866b5049f8bd70192e99ab63e1592 a rdf:Statement;
+  rdf:subject imdb:tt0000370;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm8709803;
+  imdb:playedCharacter "Ebenezer Scrooge" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2594 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1594 a rdf:Statement;
   rdf:subject imdb:tt0000370;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm1304340;
   imdb:jobTitle "play 'Scrooge'" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2595 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1595 a rdf:Statement;
   rdf:subject imdb:tt0000370;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0002042;
   imdb:jobTitle "novel \"A Christmas Carol\"" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2596 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1596 a rdf:Statement;
   rdf:subject imdb:tt0000370;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17335,13 +17970,22 @@ imdb:tt0000376 imdb:cast-actor imdb:nm0466448;
   imdb:cast-writer imdb:nm0670740;
   imdb:cast-composer imdb:nm0449435 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2603 imdb:playedCharacter "Salome" .
+_:562bd3866b5049f8bd70192e99ab63e1603 a rdf:Statement;
+  rdf:subject imdb:tt0000376;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0617272;
+  imdb:playedCharacter "Salome" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2610 imdb:playedCharacter "Táncos" .
+_:562bd3866b5049f8bd70192e99ab63e1610 a rdf:Statement;
+  rdf:subject imdb:tt0000376;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0078562;
+  imdb:playedCharacter "Táncos" .
 
-imdb:tt0000377 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000377 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2613 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1613 a rdf:Statement;
   rdf:subject imdb:tt0000377;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17352,27 +17996,31 @@ imdb:tt0000378 imdb:cast-actress imdb:nm0462306, imdb:nm0815907;
 
 imdb:tt0000379 imdb:cast-director imdb:nm0005717 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2618 a rdf:Statement;
+imdb:tt0000380 imdb:cast-director imdb:nm0634629, imdb:nm0954087;
+  imdb:cast-writer imdb:nm0674518 .
+
+_:562bd3866b5049f8bd70192e99ab63e1618 a rdf:Statement;
   rdf:subject imdb:tt0000380;
   rdf:predicate imdb:cast-director;
   rdf:object imdb:nm0634629;
   imdb:jobTitle "co-director" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2619 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1619 a rdf:Statement;
   rdf:subject imdb:tt0000380;
   rdf:predicate imdb:cast-director;
   rdf:object imdb:nm0954087;
   imdb:jobTitle "co-director" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2620 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1620 a rdf:Statement;
   rdf:subject imdb:tt0000380;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0674518;
   imdb:jobTitle "tale" .
 
-imdb:tt0000381 imdb:cast-actor imdb:nm0168621 .
+imdb:tt0000381 imdb:cast-actor imdb:nm0168621;
+  imdb:cast-producer imdb:nm0002615 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2622 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1622 a rdf:Statement;
   rdf:subject imdb:tt0000381;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0002615;
@@ -17391,7 +18039,11 @@ imdb:tt0000386 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000387 imdb:cast-actor imdb:nm5394591;
   imdb:cast-director imdb:nm0617588, imdb:nm0881616 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2628 imdb:playedCharacter "Attendant Bearing King Edward's Sword" .
+_:562bd3866b5049f8bd70192e99ab63e1628 a rdf:Statement;
+  rdf:subject imdb:tt0000387;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm5394591;
+  imdb:playedCharacter "Attendant Bearing King Edward's Sword" .
 
 imdb:tt0000388 imdb:cast-actress imdb:nm0260089;
   imdb:cast-director imdb:nm0349785 .
@@ -17402,9 +18054,10 @@ imdb:tt0000390 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000391 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000392 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000392 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2637 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1637 a rdf:Statement;
   rdf:subject imdb:tt0000392;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17425,9 +18078,17 @@ imdb:tt0000398 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000399 imdb:cast-actor imdb:nm0924920, imdb:nm0925513;
   imdb:cast-director imdb:nm2092030, imdb:nm0692105 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2644 imdb:playedCharacter "Farmer" .
+_:562bd3866b5049f8bd70192e99ab63e1644 a rdf:Statement;
+  rdf:subject imdb:tt0000399;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0924920;
+  imdb:playedCharacter "Farmer" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2645 imdb:playedCharacter "Jack" .
+_:562bd3866b5049f8bd70192e99ab63e1645 a rdf:Statement;
+  rdf:subject imdb:tt0000399;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0925513;
+  imdb:playedCharacter "Jack" .
 
 imdb:tt0000400 imdb:cast-director imdb:nm0349785 .
 
@@ -17458,18 +18119,27 @@ imdb:tt0000412 imdb:cast-director imdb:nm0555522 .
 
 imdb:tt0000413 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2664 imdb:playedCharacter "The Blonde Miser", "Thief" .
+_:562bd3866b5049f8bd70192e99ab63e1664 a rdf:Statement;
+  rdf:subject imdb:tt0000413;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "The Blonde Miser", "Thief" .
 
 imdb:tt0000414 imdb:cast-actor imdb:nm0542567;
   imdb:cast-director imdb:nm0692105 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2665 imdb:playedCharacter "Uncle Josh" .
+_:562bd3866b5049f8bd70192e99ab63e1665 a rdf:Statement;
+  rdf:subject imdb:tt0000414;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0542567;
+  imdb:playedCharacter "Uncle Josh" .
 
 imdb:tt0000415 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000416 imdb:cast-director imdb:nm0954087 .
+imdb:tt0000416 imdb:cast-director imdb:nm0954087;
+  imdb:cast-writer imdb:nm0957652 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2669 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1669 a rdf:Statement;
   rdf:subject imdb:tt0000416;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0957652;
@@ -17477,24 +18147,40 @@ _:b2f00e3714564bd2a2adecab33d7abb2669 a rdf:Statement;
 
 imdb:tt0000417 imdb:cast-actor imdb:nm0617588, imdb:nm0029244, imdb:nm1215996;
   imdb:cast-actress imdb:nm0076933;
+  imdb:cast-writer imdb:nm0894523, imdb:nm0920229;
   imdb:cast-composer imdb:nm0242155, imdb:nm0324073, imdb:nm4491570 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2670 imdb:playedCharacter "Prof. Barbenfouillis",
-    "The Moon" .
+_:562bd3866b5049f8bd70192e99ab63e1670 a rdf:Statement;
+  rdf:subject imdb:tt0000417;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Prof. Barbenfouillis", "The Moon" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2671 imdb:playedCharacter "Astronomer - Nostradamus" .
+_:562bd3866b5049f8bd70192e99ab63e1671 a rdf:Statement;
+  rdf:subject imdb:tt0000417;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0029244;
+  imdb:playedCharacter "Astronomer - Nostradamus" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2672 imdb:playedCharacter "Lady in the Moon" .
+_:562bd3866b5049f8bd70192e99ab63e1672 a rdf:Statement;
+  rdf:subject imdb:tt0000417;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0076933;
+  imdb:playedCharacter "Lady in the Moon" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2673 imdb:playedCharacter "Astronomer- Alcofrisbas" .
+_:562bd3866b5049f8bd70192e99ab63e1673 a rdf:Statement;
+  rdf:subject imdb:tt0000417;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1215996;
+  imdb:playedCharacter "Astronomer- Alcofrisbas" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2674 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1674 a rdf:Statement;
   rdf:subject imdb:tt0000417;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0894523;
   imdb:jobTitle "novel \"De la Terre à la Lune\"" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2675 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1675 a rdf:Statement;
   rdf:subject imdb:tt0000417;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0920229;
@@ -17506,17 +18192,34 @@ imdb:tt0000419 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000420 imdb:cast-actress imdb:nm0164281;
   imdb:cast-actor imdb:nm0378408, imdb:nm1012587, imdb:nm0265714;
-  imdb:cast-director imdb:nm0832948 .
+  imdb:cast-director imdb:nm0832948;
+  imdb:cast-writer imdb:nm0140902 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2681 imdb:playedCharacter "Alice" .
+_:562bd3866b5049f8bd70192e99ab63e1681 a rdf:Statement;
+  rdf:subject imdb:tt0000420;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0164281;
+  imdb:playedCharacter "Alice" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2682 imdb:playedCharacter "Frog" .
+_:562bd3866b5049f8bd70192e99ab63e1682 a rdf:Statement;
+  rdf:subject imdb:tt0000420;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0378408;
+  imdb:playedCharacter "Frog" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2683 imdb:playedCharacter "Large Dog" .
+_:562bd3866b5049f8bd70192e99ab63e1683 a rdf:Statement;
+  rdf:subject imdb:tt0000420;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1012587;
+  imdb:playedCharacter "Large Dog" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2684 imdb:playedCharacter "Card" .
+_:562bd3866b5049f8bd70192e99ab63e1684 a rdf:Statement;
+  rdf:subject imdb:tt0000420;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0265714;
+  imdb:playedCharacter "Card" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2686 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1686 a rdf:Statement;
   rdf:subject imdb:tt0000420;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0140902;
@@ -17528,23 +18231,29 @@ imdb:tt0000421 imdb:cast-actor imdb:nm0954087;
 imdb:tt0000422 imdb:cast-actor imdb:nm0954087;
   imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2689 imdb:playedCharacter "Traveler" .
+_:562bd3866b5049f8bd70192e99ab63e1689 a rdf:Statement;
+  rdf:subject imdb:tt0000422;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0954087;
+  imdb:playedCharacter "Traveler" .
 
 imdb:tt0000423 imdb:cast-actor imdb:nm0617588 .
 
 imdb:tt0000424 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000425 imdb:cast-actor imdb:nm0168621 .
+imdb:tt0000425 imdb:cast-actor imdb:nm0168621;
+  imdb:cast-producer imdb:nm0783152 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2694 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1694 a rdf:Statement;
   rdf:subject imdb:tt0000425;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0783152;
   imdb:jobTitle "producer" .
 
-imdb:tt0000426 imdb:cast-actor imdb:nm0168621 .
+imdb:tt0000426 imdb:cast-actor imdb:nm0168621;
+  imdb:cast-producer imdb:nm0002615 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2696 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1696 a rdf:Statement;
   rdf:subject imdb:tt0000426;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0002615;
@@ -17559,7 +18268,11 @@ imdb:tt0000429 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000430 imdb:cast-actor imdb:nm10102653;
   imdb:cast-director imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2700 imdb:playedCharacter "Chess Player" .
+_:562bd3866b5049f8bd70192e99ab63e1700 a rdf:Statement;
+  rdf:subject imdb:tt0000430;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm10102653;
+  imdb:playedCharacter "Chess Player" .
 
 imdb:tt0000431 imdb:cast-director imdb:nm0349785 .
 
@@ -17571,7 +18284,11 @@ imdb:tt0000433 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000434 imdb:cast-actress imdb:nm2940350;
   imdb:cast-director imdb:nm0808310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2706 imdb:playedCharacter "Dorothy" .
+_:562bd3866b5049f8bd70192e99ab63e1706 a rdf:Statement;
+  rdf:subject imdb:tt0000434;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm2940350;
+  imdb:playedCharacter "Dorothy" .
 
 imdb:tt0000435 imdb:cast-director imdb:nm0349785 .
 
@@ -17584,34 +18301,63 @@ imdb:tt0000438 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000439 imdb:cast-actor imdb:nm0302368, imdb:nm0001908, imdb:nm0007625, imdb:nm0055607,
     imdb:nm0055661, imdb:nm0131750, imdb:nm2313241;
   imdb:cast-director imdb:nm0692105;
+  imdb:cast-writer imdb:nm1145809;
   imdb:cast-cinematographer imdb:nm0807466 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2713 imdb:playedCharacter "Little Boy" .
+_:562bd3866b5049f8bd70192e99ab63e1713 a rdf:Statement;
+  rdf:subject imdb:tt0000439;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0302368;
+  imdb:playedCharacter "Little Boy" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2714 imdb:playedCharacter "Bandit", "Shot Passenger",
-    "Tenderfoot Dancer" .
+_:562bd3866b5049f8bd70192e99ab63e1714 a rdf:Statement;
+  rdf:subject imdb:tt0000439;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0001908;
+  imdb:playedCharacter "Bandit", "Shot Passenger", "Tenderfoot Dancer" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2715 imdb:playedCharacter "Sheriff" .
+_:562bd3866b5049f8bd70192e99ab63e1715 a rdf:Statement;
+  rdf:subject imdb:tt0000439;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0007625;
+  imdb:playedCharacter "Sheriff" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2717 imdb:playedCharacter "Bandit Who Fires at Camera" .
+_:562bd3866b5049f8bd70192e99ab63e1717 a rdf:Statement;
+  rdf:subject imdb:tt0000439;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0055661;
+  imdb:playedCharacter "Bandit Who Fires at Camera" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2719 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1719 a rdf:Statement;
   rdf:subject imdb:tt0000439;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm1145809;
   imdb:jobTitle "story" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2721 imdb:playedCharacter "Sheriff" .
+_:562bd3866b5049f8bd70192e99ab63e1721 a rdf:Statement;
+  rdf:subject imdb:tt0000439;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0131750;
+  imdb:playedCharacter "Sheriff" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2722 imdb:playedCharacter "Fourth Bandit" .
+_:562bd3866b5049f8bd70192e99ab63e1722 a rdf:Statement;
+  rdf:subject imdb:tt0000439;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2313241;
+  imdb:playedCharacter "Fourth Bandit" .
 
 imdb:tt0000440 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2723 imdb:playedCharacter "Musketeer" .
+_:562bd3866b5049f8bd70192e99ab63e1723 a rdf:Statement;
+  rdf:subject imdb:tt0000440;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Musketeer" .
 
-imdb:tt0000441 imdb:cast-director imdb:nm0159015 .
+imdb:tt0000441 imdb:cast-director imdb:nm0159015;
+  imdb:cast-writer imdb:nm0842605 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2725 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1725 a rdf:Statement;
   rdf:subject imdb:tt0000441;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0842605;
@@ -17619,31 +18365,37 @@ _:b2f00e3714564bd2a2adecab33d7abb2725 a rdf:Statement;
 
 imdb:tt0000442 imdb:cast-actress imdb:nm0622273;
   imdb:cast-actor imdb:nm1854449;
-  imdb:cast-director imdb:nm0253298 .
+  imdb:cast-director imdb:nm0253298;
+  imdb:cast-writer imdb:nm1856940, imdb:nm1857036 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2726 imdb:playedCharacter "Barnemordersken" .
+_:562bd3866b5049f8bd70192e99ab63e1726 a rdf:Statement;
+  rdf:subject imdb:tt0000442;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0622273;
+  imdb:playedCharacter "Barnemordersken" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2729 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1729 a rdf:Statement;
   rdf:subject imdb:tt0000442;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm1856940;
   imdb:jobTitle "writer" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2730 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1730 a rdf:Statement;
   rdf:subject imdb:tt0000442;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm1857036;
   imdb:jobTitle "writer" .
 
-imdb:tt0000443 imdb:cast-director imdb:nm0742777 .
+imdb:tt0000443 imdb:cast-director imdb:nm0742777;
+  imdb:cast-writer imdb:nm3887135, imdb:nm0519303 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2732 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1732 a rdf:Statement;
   rdf:subject imdb:tt0000443;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm3887135;
   imdb:jobTitle "scenario" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2733 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1733 a rdf:Statement;
   rdf:subject imdb:tt0000443;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0519303;
@@ -17652,7 +18404,11 @@ _:b2f00e3714564bd2a2adecab33d7abb2733 a rdf:Statement;
 imdb:tt0000444 imdb:cast-actor imdb:nm0954087;
   imdb:cast-director imdb:nm0349785 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2734 imdb:playedCharacter "Magician" .
+_:562bd3866b5049f8bd70192e99ab63e1734 a rdf:Statement;
+  rdf:subject imdb:tt0000444;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0954087;
+  imdb:playedCharacter "Magician" .
 
 imdb:tt0000445 imdb:cast-director imdb:nm0349785 .
 
@@ -17662,13 +18418,29 @@ imdb:tt0000447 imdb:cast-actor imdb:nm0692105, imdb:nm0924475, imdb:nm0924920;
   imdb:cast-actress imdb:nm0891119;
   imdb:cast-director imdb:nm2092030 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2738 imdb:playedCharacter "Policeman" .
+_:562bd3866b5049f8bd70192e99ab63e1738 a rdf:Statement;
+  rdf:subject imdb:tt0000447;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0692105;
+  imdb:playedCharacter "Policeman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2739 imdb:playedCharacter "The Girl" .
+_:562bd3866b5049f8bd70192e99ab63e1739 a rdf:Statement;
+  rdf:subject imdb:tt0000447;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0891119;
+  imdb:playedCharacter "The Girl" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2740 imdb:playedCharacter "The Fireman" .
+_:562bd3866b5049f8bd70192e99ab63e1740 a rdf:Statement;
+  rdf:subject imdb:tt0000447;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0924475;
+  imdb:playedCharacter "The Fireman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2741 imdb:playedCharacter "Fire Chief" .
+_:562bd3866b5049f8bd70192e99ab63e1741 a rdf:Statement;
+  rdf:subject imdb:tt0000447;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0924920;
+  imdb:playedCharacter "Fire Chief" .
 
 imdb:tt0000448 imdb:cast-director imdb:nm0349785 .
 
@@ -17679,12 +18451,20 @@ imdb:tt0000450 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000451 imdb:cast-actress imdb:nm0809419;
   imdb:cast-director imdb:nm0808310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2746 imdb:playedCharacter "Mary Jane" .
+_:562bd3866b5049f8bd70192e99ab63e1746 a rdf:Statement;
+  rdf:subject imdb:tt0000451;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0809419;
+  imdb:playedCharacter "Mary Jane" .
 
 imdb:tt0000452 imdb:cast-actor imdb:nm0001908;
   imdb:cast-director imdb:nm0692105 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2748 imdb:playedCharacter "Messenger Boy" .
+_:562bd3866b5049f8bd70192e99ab63e1748 a rdf:Statement;
+  rdf:subject imdb:tt0000452;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0001908;
+  imdb:playedCharacter "Messenger Boy" .
 
 imdb:tt0000453 imdb:cast-director imdb:nm0349785 .
 
@@ -17692,7 +18472,11 @@ imdb:tt0000454 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000455 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2752 imdb:playedCharacter "The Melomaniac" .
+_:562bd3866b5049f8bd70192e99ab63e1752 a rdf:Statement;
+  rdf:subject imdb:tt0000455;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "The Melomaniac" .
 
 imdb:tt0000456 imdb:cast-cinematographer imdb:nm0005658 .
 
@@ -17711,40 +18495,66 @@ imdb:tt0000462 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000463 imdb:cast-director imdb:nm0005717 .
 
 imdb:tt0000464 imdb:cast-actor imdb:nm0420198;
-  imdb:cast-director imdb:nm0005690 .
+  imdb:cast-director imdb:nm0005690;
+  imdb:cast-writer imdb:nm0099105, imdb:nm0410331 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2761 imdb:playedCharacter "Rip Van Winkle" .
+_:562bd3866b5049f8bd70192e99ab63e1761 a rdf:Statement;
+  rdf:subject imdb:tt0000464;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0420198;
+  imdb:playedCharacter "Rip Van Winkle" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2763 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1763 a rdf:Statement;
   rdf:subject imdb:tt0000464;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0099105;
   imdb:jobTitle "play" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2764 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1764 a rdf:Statement;
   rdf:subject imdb:tt0000464;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0410331;
   imdb:jobTitle "story" .
 
 imdb:tt0000465 imdb:cast-actor imdb:nm0617588, imdb:nm0214243, imdb:nm0243651;
-  imdb:cast-actress imdb:nm9473330, imdb:nm0076933 .
+  imdb:cast-actress imdb:nm9473330, imdb:nm0076933;
+  imdb:cast-writer imdb:nm1340310 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2765 imdb:playedCharacter "Prince Bel-Azor" .
+_:562bd3866b5049f8bd70192e99ab63e1765 a rdf:Statement;
+  rdf:subject imdb:tt0000465;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Prince Bel-Azor" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2766 imdb:playedCharacter "Princess Azurine" .
+_:562bd3866b5049f8bd70192e99ab63e1766 a rdf:Statement;
+  rdf:subject imdb:tt0000465;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm9473330;
+  imdb:playedCharacter "Princess Azurine" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2767 imdb:playedCharacter "Aurora" .
+_:562bd3866b5049f8bd70192e99ab63e1767 a rdf:Statement;
+  rdf:subject imdb:tt0000465;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0076933;
+  imdb:playedCharacter "Aurora" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2768 imdb:playedCharacter "Role" .
+_:562bd3866b5049f8bd70192e99ab63e1768 a rdf:Statement;
+  rdf:subject imdb:tt0000465;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0214243;
+  imdb:playedCharacter "Role" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2769 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1769 a rdf:Statement;
   rdf:subject imdb:tt0000465;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm1340310;
   imdb:jobTitle "story \"La Biche au bois\"" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2770 imdb:playedCharacter "Extra" .
+_:562bd3866b5049f8bd70192e99ab63e1770 a rdf:Statement;
+  rdf:subject imdb:tt0000465;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0243651;
+  imdb:playedCharacter "Extra" .
 
 imdb:tt0000466 imdb:cast-director imdb:nm0349785 .
 
@@ -17756,21 +18566,31 @@ imdb:tt0000469 imdb:cast-director imdb:nm0808310 .
 
 imdb:tt0000470 imdb:cast-director imdb:nm0349785 .
 
-imdb:tt0000471 imdb:cast-director imdb:nm0692105 .
+imdb:tt0000471 imdb:cast-director imdb:nm0692105;
+  imdb:cast-writer imdb:nm0832952 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2777 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1777 a rdf:Statement;
   rdf:subject imdb:tt0000471;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0832952;
   imdb:jobTitle "novel \"Uncle Tom's Cabin\"" .
 
-imdb:tt0000472 imdb:cast-actor imdb:nm10342565, imdb:nm0002615 .
+imdb:tt0000472 imdb:cast-actor imdb:nm10342565, imdb:nm0002615;
+  imdb:cast-writer imdb:nm0832952 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2778 imdb:playedCharacter "Arthur Shelby" .
+_:562bd3866b5049f8bd70192e99ab63e1778 a rdf:Statement;
+  rdf:subject imdb:tt0000472;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm10342565;
+  imdb:playedCharacter "Arthur Shelby" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2779 imdb:playedCharacter "Simon Legree" .
+_:562bd3866b5049f8bd70192e99ab63e1779 a rdf:Statement;
+  rdf:subject imdb:tt0000472;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0002615;
+  imdb:playedCharacter "Simon Legree" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2780 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1780 a rdf:Statement;
   rdf:subject imdb:tt0000472;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0832952;
@@ -17781,9 +18601,10 @@ imdb:tt0000473 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000474 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000475 imdb:cast-actor imdb:nm3345408;
-  imdb:cast-director imdb:nm0095816 .
+  imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2785 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1785 a rdf:Statement;
   rdf:subject imdb:tt0000475;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17800,7 +18621,9 @@ imdb:tt0000479 imdb:cast-director imdb:nm0666972 .
 
 imdb:tt0000480 imdb:cast-actor imdb:nm0617588 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2794 a rdf:Statement;
+imdb:tt0000481 imdb:cast-producer imdb:nm0666972 .
+
+_:562bd3866b5049f8bd70192e99ab63e1794 a rdf:Statement;
   rdf:subject imdb:tt0000481;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -17815,11 +18638,16 @@ imdb:tt0000484 imdb:cast-director imdb:nm0349785 .
 imdb:tt0000485 imdb:cast-director imdb:nm0349785 .
 
 imdb:tt0000486 imdb:cast-actor imdb:nm0659947, imdb:nm1173635, imdb:nm0085865;
-  imdb:cast-actress imdb:nm0069325, imdb:nm0085870 .
+  imdb:cast-actress imdb:nm0069325, imdb:nm0085870;
+  imdb:cast-writer imdb:nm0850483 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2799 imdb:playedCharacter "Monsieur Beaucaire" .
+_:562bd3866b5049f8bd70192e99ab63e1799 a rdf:Statement;
+  rdf:subject imdb:tt0000486;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0659947;
+  imdb:playedCharacter "Monsieur Beaucaire" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2803 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1803 a rdf:Statement;
   rdf:subject imdb:tt0000486;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0850483;
@@ -17829,7 +18657,11 @@ imdb:tt0000487 imdb:cast-actress imdb:nm0523316;
   imdb:cast-director imdb:nm0002615;
   imdb:cast-cinematographer imdb:nm0292418 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2805 imdb:playedCharacter "Little Girl (Telegrapher's daughter)" .
+_:562bd3866b5049f8bd70192e99ab63e1805 a rdf:Statement;
+  rdf:subject imdb:tt0000487;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0523316;
+  imdb:playedCharacter "Little Girl (Telegrapher's daughter)" .
 
 imdb:tt0000488 imdb:cast-actor imdb:nm0177886, imdb:nm0298300, imdb:nm0250480;
   imdb:cast-actress imdb:nm0065035, imdb:nm0422465, imdb:nm0588295, imdb:nm1096358,
@@ -17837,21 +18669,53 @@ imdb:tt0000488 imdb:cast-actor imdb:nm0177886, imdb:nm0298300, imdb:nm0250480;
   imdb:cast-director imdb:nm0789748;
   imdb:cast-writer imdb:nm0794919 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2808 imdb:playedCharacter "The Minister" .
+_:562bd3866b5049f8bd70192e99ab63e1808 a rdf:Statement;
+  rdf:subject imdb:tt0000488;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0177886;
+  imdb:playedCharacter "The Minister" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2809 imdb:playedCharacter "Joe, the Newsboy" .
+_:562bd3866b5049f8bd70192e99ab63e1809 a rdf:Statement;
+  rdf:subject imdb:tt0000488;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0298300;
+  imdb:playedCharacter "Joe, the Newsboy" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2810 imdb:playedCharacter "Joe's Grandmother" .
+_:562bd3866b5049f8bd70192e99ab63e1810 a rdf:Statement;
+  rdf:subject imdb:tt0000488;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0065035;
+  imdb:playedCharacter "Joe's Grandmother" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2811 imdb:playedCharacter "Manager of the Fresh Air Fund" .
+_:562bd3866b5049f8bd70192e99ab63e1811 a rdf:Statement;
+  rdf:subject imdb:tt0000488;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0250480;
+  imdb:playedCharacter "Manager of the Fresh Air Fund" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2812 imdb:playedCharacter "Committee Woman" .
+_:562bd3866b5049f8bd70192e99ab63e1812 a rdf:Statement;
+  rdf:subject imdb:tt0000488;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0422465;
+  imdb:playedCharacter "Committee Woman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2815 imdb:playedCharacter "Committee Woman" .
+_:562bd3866b5049f8bd70192e99ab63e1815 a rdf:Statement;
+  rdf:subject imdb:tt0000488;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0588295;
+  imdb:playedCharacter "Committee Woman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2816 imdb:playedCharacter "Committee Woman" .
+_:562bd3866b5049f8bd70192e99ab63e1816 a rdf:Statement;
+  rdf:subject imdb:tt0000488;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm1096358;
+  imdb:playedCharacter "Committee Woman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2817 imdb:playedCharacter "Committee Woman" .
+_:562bd3866b5049f8bd70192e99ab63e1817 a rdf:Statement;
+  rdf:subject imdb:tt0000488;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0259860;
+  imdb:playedCharacter "Committee Woman" .
 
 imdb:tt0000489 imdb:cast-director imdb:nm0349785 .
 
@@ -17871,46 +18735,91 @@ imdb:tt0000495 imdb:cast-director imdb:nm0954087;
 
 imdb:tt0000496 imdb:cast-cinematographer imdb:nm0007625, imdb:nm0692105 .
 
-imdb:tt0000498 imdb:cast-actor imdb:nm1012587, imdb:nm0378408, imdb:nm0809910;
-  imdb:cast-actress imdb:nm0164281, imdb:nm0378407, imdb:nm1428608;
-  imdb:cast-director imdb:nm0280432 .
+imdb:tt0000498 imdb:cast-actor imdb:nm1012587;
+  imdb:cast-actress imdb:nm0164281, imdb:nm0378407 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2829 imdb:playedCharacter "Rover the dog" .
+_:562bd3866b5049f8bd70192e99ab63e1829 a rdf:Statement;
+  rdf:subject imdb:tt0000498;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1012587;
+  imdb:playedCharacter "Rover the dog" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2830 imdb:playedCharacter "Nursemaid" .
+_:562bd3866b5049f8bd70192e99ab63e1830 a rdf:Statement;
+  rdf:subject imdb:tt0000498;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0164281;
+  imdb:playedCharacter "Nursemaid" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2831 imdb:playedCharacter "The baby" .
+_:562bd3866b5049f8bd70192e99ab63e1831 rdf:subject imdb:tt0000498;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0378407;
+  a rdf:Statement;
+  imdb:playedCharacter "The baby" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2832 imdb:playedCharacter "Harassed father" .
+imdb:tt0000498 imdb:cast-actor imdb:nm0378408, imdb:nm0809910;
+  imdb:cast-director imdb:nm0280432;
+  imdb:cast-writer imdb:nm1539443;
+  imdb:cast-actress imdb:nm1428608 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2834 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1832 a rdf:Statement;
+  rdf:subject imdb:tt0000498;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0378408;
+  imdb:playedCharacter "Harassed father" .
+
+_:562bd3866b5049f8bd70192e99ab63e1834 a rdf:Statement;
   rdf:subject imdb:tt0000498;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm1539443;
   imdb:jobTitle "story" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2835 imdb:playedCharacter "Gypsy woman" .
+_:562bd3866b5049f8bd70192e99ab63e1835 a rdf:Statement;
+  rdf:subject imdb:tt0000498;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm1428608;
+  imdb:playedCharacter "Gypsy woman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2836 imdb:playedCharacter "Soldier" .
+_:562bd3866b5049f8bd70192e99ab63e1836 a rdf:Statement;
+  rdf:subject imdb:tt0000498;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0809910;
+  imdb:playedCharacter "Soldier" .
 
 imdb:tt0000499 imdb:cast-actor imdb:nm0617588;
-  imdb:cast-actress imdb:nm0016317, imdb:nm0194945, imdb:nm8706003 .
+  imdb:cast-actress imdb:nm0016317, imdb:nm0194945, imdb:nm8706003;
+  imdb:cast-writer imdb:nm0894523, imdb:nm0257866 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2837 imdb:playedCharacter "Mabouloff" .
+_:562bd3866b5049f8bd70192e99ab63e1837 a rdf:Statement;
+  rdf:subject imdb:tt0000499;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0617588;
+  imdb:playedCharacter "Mabouloff" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2838 imdb:playedCharacter "Madame Latrouille" .
+_:562bd3866b5049f8bd70192e99ab63e1838 a rdf:Statement;
+  rdf:subject imdb:tt0000499;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0016317;
+  imdb:playedCharacter "Madame Latrouille" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2839 imdb:playedCharacter "Villager at seaport" .
+_:562bd3866b5049f8bd70192e99ab63e1839 a rdf:Statement;
+  rdf:subject imdb:tt0000499;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0194945;
+  imdb:playedCharacter "Villager at seaport" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2840 imdb:playedCharacter "Nurse in Swiss hospital" .
+_:562bd3866b5049f8bd70192e99ab63e1840 a rdf:Statement;
+  rdf:subject imdb:tt0000499;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm8706003;
+  imdb:playedCharacter "Nurse in Swiss hospital" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2841 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1841 a rdf:Statement;
   rdf:subject imdb:tt0000499;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0894523;
   imdb:jobTitle "play \"Le Voyage a travers l'Impossible\"" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2842 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1842 a rdf:Statement;
   rdf:subject imdb:tt0000499;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0257866;
@@ -17919,23 +18828,40 @@ _:b2f00e3714564bd2a2adecab33d7abb2842 a rdf:Statement;
 imdb:tt0000500 imdb:cast-cinematographer imdb:nm0005658 .
 
 imdb:tt0000501 imdb:cast-actor imdb:nm0001908, imdb:nm1173635, imdb:nm0659947, imdb:nm0792727;
-  imdb:cast-director imdb:nm0085865 .
+  imdb:cast-director imdb:nm0085865;
+  imdb:cast-writer imdb:nm0236279, imdb:nm0509478 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2844 imdb:playedCharacter "Sherlock Holmes" .
+_:562bd3866b5049f8bd70192e99ab63e1844 a rdf:Statement;
+  rdf:subject imdb:tt0000501;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0001908;
+  imdb:playedCharacter "Sherlock Holmes" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2845 imdb:playedCharacter "John H. Watson, M.D." .
+_:562bd3866b5049f8bd70192e99ab63e1845 a rdf:Statement;
+  rdf:subject imdb:tt0000501;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1173635;
+  imdb:playedCharacter "John H. Watson, M.D." .
 
-_:b2f00e3714564bd2a2adecab33d7abb2846 imdb:playedCharacter "Bandit" .
+_:562bd3866b5049f8bd70192e99ab63e1846 a rdf:Statement;
+  rdf:subject imdb:tt0000501;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0659947;
+  imdb:playedCharacter "Bandit" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2847 imdb:playedCharacter "Bandit" .
+_:562bd3866b5049f8bd70192e99ab63e1847 a rdf:Statement;
+  rdf:subject imdb:tt0000501;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0792727;
+  imdb:playedCharacter "Bandit" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2849 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1849 a rdf:Statement;
   rdf:subject imdb:tt0000501;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0236279;
   imdb:jobTitle "story" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2850 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1850 a rdf:Statement;
   rdf:subject imdb:tt0000501;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0509478;
@@ -17967,21 +18893,30 @@ imdb:tt0000510 imdb:cast-director imdb:nm0063413 .
 
 imdb:tt0000511 imdb:cast-actress imdb:nm0065393;
   imdb:cast-actor imdb:nm0903455;
-  imdb:cast-director imdb:nm0349785;
+  imdb:cast-director imdb:nm0349785, imdb:nm0419327;
+  imdb:cast-writer imdb:nm0401076;
   imdb:cast-cinematographer imdb:nm0094975;
   imdb:cast-production_designer imdb:nm0579494 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2872 imdb:playedCharacter "Esmeralda" .
+_:562bd3866b5049f8bd70192e99ab63e1872 a rdf:Statement;
+  rdf:subject imdb:tt0000511;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0065393;
+  imdb:playedCharacter "Esmeralda" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2873 imdb:playedCharacter "Quasimodo" .
+_:562bd3866b5049f8bd70192e99ab63e1873 a rdf:Statement;
+  rdf:subject imdb:tt0000511;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0903455;
+  imdb:playedCharacter "Quasimodo" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2875 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1875 a rdf:Statement;
   rdf:subject imdb:tt0000511;
   rdf:predicate imdb:cast-director;
   rdf:object imdb:nm0419327;
   imdb:jobTitle "co-director" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2876 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1876 a rdf:Statement;
   rdf:subject imdb:tt0000511;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0401076;
@@ -18001,9 +18936,17 @@ imdb:tt0000515 imdb:cast-director imdb:nm0159015 .
 imdb:tt0000516 imdb:cast-actor imdb:nm0159015;
   imdb:cast-actress imdb:nm0558863 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2891 imdb:playedCharacter "Bertrand" .
+_:562bd3866b5049f8bd70192e99ab63e1891 a rdf:Statement;
+  rdf:subject imdb:tt0000516;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0159015;
+  imdb:playedCharacter "Bertrand" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2892 imdb:playedCharacter "Laure" .
+_:562bd3866b5049f8bd70192e99ab63e1892 a rdf:Statement;
+  rdf:subject imdb:tt0000516;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0558863;
+  imdb:playedCharacter "Laure" .
 
 imdb:tt0000517 imdb:cast-director imdb:nm0063413 .
 
@@ -18014,40 +18957,100 @@ imdb:tt0000519 imdb:cast-actress imdb:nm1671089, imdb:nm1215402, imdb:nm0250983,
   imdb:cast-actor imdb:nm1670497, imdb:nm1670913, imdb:nm0728289;
   imdb:cast-director imdb:nm0692105 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2896 imdb:playedCharacter "The Kleptomaniac, Mrs. Banker" .
+_:562bd3866b5049f8bd70192e99ab63e1896 a rdf:Statement;
+  rdf:subject imdb:tt0000519;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm1671089;
+  imdb:playedCharacter "The Kleptomaniac, Mrs. Banker" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2897 imdb:playedCharacter "Store Detective" .
+_:562bd3866b5049f8bd70192e99ab63e1897 a rdf:Statement;
+  rdf:subject imdb:tt0000519;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1670497;
+  imdb:playedCharacter "Store Detective" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2898 imdb:playedCharacter "Female Detective" .
+_:562bd3866b5049f8bd70192e99ab63e1898 a rdf:Statement;
+  rdf:subject imdb:tt0000519;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm1215402;
+  imdb:playedCharacter "Female Detective" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2899 imdb:playedCharacter "Superintendant, Department Store" .
+_:562bd3866b5049f8bd70192e99ab63e1899 a rdf:Statement;
+  rdf:subject imdb:tt0000519;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm1670913;
+  imdb:playedCharacter "Superintendant, Department Store" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2901 imdb:playedCharacter "The Thief" .
+_:562bd3866b5049f8bd70192e99ab63e1901 a rdf:Statement;
+  rdf:subject imdb:tt0000519;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0250983;
+  imdb:playedCharacter "The Thief" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2902 imdb:playedCharacter "Police Court Judge" .
+_:562bd3866b5049f8bd70192e99ab63e1902 a rdf:Statement;
+  rdf:subject imdb:tt0000519;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0728289;
+  imdb:playedCharacter "Police Court Judge" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2903 imdb:playedCharacter "Justice" .
+_:562bd3866b5049f8bd70192e99ab63e1903 a rdf:Statement;
+  rdf:subject imdb:tt0000519;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0183817;
+  imdb:playedCharacter "Justice" .
 
 imdb:tt0000520 imdb:cast-actor imdb:nm0353575, imdb:nm2331275, imdb:nm2329944, imdb:nm2485827,
     imdb:nm4749111;
   imdb:cast-actress imdb:nm2329855, imdb:nm2326707, imdb:nm2332493;
   imdb:cast-director imdb:nm0353576 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2904 imdb:playedCharacter "Charles Peace" .
+_:562bd3866b5049f8bd70192e99ab63e1904 a rdf:Statement;
+  rdf:subject imdb:tt0000520;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0353575;
+  imdb:playedCharacter "Charles Peace" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2905 imdb:playedCharacter "Mrs. Dyson" .
+_:562bd3866b5049f8bd70192e99ab63e1905 a rdf:Statement;
+  rdf:subject imdb:tt0000520;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm2329855;
+  imdb:playedCharacter "Mrs. Dyson" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2906 imdb:playedCharacter "Peace's accomplice" .
+_:562bd3866b5049f8bd70192e99ab63e1906 a rdf:Statement;
+  rdf:subject imdb:tt0000520;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm2326707;
+  imdb:playedCharacter "Peace's accomplice" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2907 imdb:playedCharacter "Dyson" .
+_:562bd3866b5049f8bd70192e99ab63e1907 a rdf:Statement;
+  rdf:subject imdb:tt0000520;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2331275;
+  imdb:playedCharacter "Dyson" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2909 imdb:playedCharacter "First policeman" .
+_:562bd3866b5049f8bd70192e99ab63e1909 a rdf:Statement;
+  rdf:subject imdb:tt0000520;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2329944;
+  imdb:playedCharacter "First policeman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2910 imdb:playedCharacter "Second policeman" .
+_:562bd3866b5049f8bd70192e99ab63e1910 a rdf:Statement;
+  rdf:subject imdb:tt0000520;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm2485827;
+  imdb:playedCharacter "Second policeman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2911 imdb:playedCharacter "Third policeman" .
+_:562bd3866b5049f8bd70192e99ab63e1911 a rdf:Statement;
+  rdf:subject imdb:tt0000520;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm4749111;
+  imdb:playedCharacter "Third policeman" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2912 imdb:playedCharacter "Peace's mother" .
+_:562bd3866b5049f8bd70192e99ab63e1912 a rdf:Statement;
+  rdf:subject imdb:tt0000520;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm2332493;
+  imdb:playedCharacter "Peace's mother" .
 
 imdb:tt0000521 imdb:cast-director imdb:nm0692105 .
 
@@ -18062,7 +19065,11 @@ imdb:tt0000525 imdb:cast-actor imdb:nm0358349, imdb:nm0595321, imdb:nm0719480, i
   imdb:cast-actress imdb:nm0196787;
   imdb:cast-director imdb:nm0243796 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2917 imdb:playedCharacter "Joe - le cow-boy" .
+_:562bd3866b5049f8bd70192e99ab63e1917 a rdf:Statement;
+  rdf:subject imdb:tt0000525;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0358349;
+  imdb:playedCharacter "Joe - le cow-boy" .
 
 imdb:tt0000526 imdb:cast-cinematographer imdb:nm0005658 .
 
@@ -18071,23 +19078,29 @@ imdb:tt0000527 imdb:cast-director imdb:nm0185426 .
 imdb:tt0000528 imdb:cast-actor imdb:nm0792727;
   imdb:cast-actress imdb:nm0085870;
   imdb:cast-director imdb:nm0001908;
+  imdb:cast-writer imdb:nm0696078, imdb:nm0395216;
+  imdb:cast-producer imdb:nm0734207;
   imdb:cast-cinematographer imdb:nm0807235 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2926 imdb:playedCharacter "Raffles" .
+_:562bd3866b5049f8bd70192e99ab63e1926 a rdf:Statement;
+  rdf:subject imdb:tt0000528;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0792727;
+  imdb:playedCharacter "Raffles" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2929 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1929 a rdf:Statement;
   rdf:subject imdb:tt0000528;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0696078;
   imdb:jobTitle "play \"Raffles, the Amateur Cracksman\"" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2930 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1930 a rdf:Statement;
   rdf:subject imdb:tt0000528;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0395216;
   imdb:jobTitle "novel" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2931 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1931 a rdf:Statement;
   rdf:subject imdb:tt0000528;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0734207;
@@ -18102,15 +19115,18 @@ imdb:tt0000531 imdb:cast-actor imdb:nm0140054;
 
 imdb:tt0000532 imdb:cast-director imdb:nm0185426 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2938 a rdf:Statement;
+imdb:tt0000533 imdb:cast-producer imdb:nm0783152 .
+
+_:562bd3866b5049f8bd70192e99ab63e1938 a rdf:Statement;
   rdf:subject imdb:tt0000533;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0783152;
   imdb:jobTitle "producer" .
 
-imdb:tt0000534 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000534 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2940 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1940 a rdf:Statement;
   rdf:subject imdb:tt0000534;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -18121,9 +19137,17 @@ imdb:tt0000535 imdb:cast-actress imdb:nm0422149;
   imdb:cast-cinematographer imdb:nm0333175;
   imdb:cast-production_designer imdb:nm0470250 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2941 imdb:playedCharacter "Anarkistens kone" .
+_:562bd3866b5049f8bd70192e99ab63e1941 a rdf:Statement;
+  rdf:subject imdb:tt0000535;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0422149;
+  imdb:playedCharacter "Anarkistens kone" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2942 imdb:playedCharacter "Anarkisten" .
+_:562bd3866b5049f8bd70192e99ab63e1942 a rdf:Statement;
+  rdf:subject imdb:tt0000535;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0488932;
+  imdb:playedCharacter "Anarkisten" .
 
 imdb:tt0000536 imdb:cast-actress imdb:nm0691995, imdb:nm0691996;
   imdb:cast-director imdb:nm6758605, imdb:nm0582268 .
@@ -18146,9 +19170,10 @@ imdb:tt0000542 imdb:cast-actress imdb:nm0261789;
 imdb:tt0000543 imdb:cast-director imdb:nm0647763;
   imdb:cast-cinematographer imdb:nm0084830, imdb:nm0333175 .
 
-imdb:tt0000544 imdb:cast-director imdb:nm1210247 .
+imdb:tt0000544 imdb:cast-director imdb:nm1210247;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2967 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1967 a rdf:Statement;
   rdf:subject imdb:tt0000544;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -18157,11 +19182,16 @@ _:b2f00e3714564bd2a2adecab33d7abb2967 a rdf:Statement;
 imdb:tt0000545 imdb:cast-cinematographer imdb:nm0005658 .
 
 imdb:tt0000546 imdb:cast-actor imdb:nm0106151;
-  imdb:cast-director imdb:nm0567363, imdb:nm0692105 .
+  imdb:cast-director imdb:nm0567363, imdb:nm0692105;
+  imdb:cast-writer imdb:nm0565560 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2969 imdb:playedCharacter "The Rarebit Fiend" .
+_:562bd3866b5049f8bd70192e99ab63e1969 a rdf:Statement;
+  rdf:subject imdb:tt0000546;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0106151;
+  imdb:playedCharacter "The Rarebit Fiend" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2972 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1972 a rdf:Statement;
   rdf:subject imdb:tt0000546;
   rdf:predicate imdb:cast-writer;
   rdf:object imdb:nm0565560;
@@ -18174,27 +19204,48 @@ imdb:tt0000548 imdb:cast-actor imdb:nm0488932, imdb:nm0526168;
   imdb:cast-writer imdb:nm0647763;
   imdb:cast-cinematographer imdb:nm0333175 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2974 imdb:playedCharacter "Fisker" .
+_:562bd3866b5049f8bd70192e99ab63e1974 a rdf:Statement;
+  rdf:subject imdb:tt0000548;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0488932;
+  imdb:playedCharacter "Fisker" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2975 imdb:playedCharacter "hans Kone" .
+_:562bd3866b5049f8bd70192e99ab63e1975 a rdf:Statement;
+  rdf:subject imdb:tt0000548;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0422149;
+  imdb:playedCharacter "hans Kone" .
 
 imdb:tt0000549 imdb:cast-actor imdb:nm0676941;
   imdb:cast-director imdb:nm0488932;
   imdb:cast-cinematographer imdb:nm0333175 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2979 imdb:playedCharacter "Petersen" .
+_:562bd3866b5049f8bd70192e99ab63e1979 a rdf:Statement;
+  rdf:subject imdb:tt0000549;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0676941;
+  imdb:playedCharacter "Petersen" .
 
 imdb:tt0000550 imdb:cast-self imdb:nm0454375, imdb:nm1678676;
   imdb:cast-director imdb:nm0647763;
   imdb:cast-cinematographer imdb:nm0084830 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2982 imdb:playedCharacter "Self - King of Denmark" .
+_:562bd3866b5049f8bd70192e99ab63e1982 a rdf:Statement;
+  rdf:subject imdb:tt0000550;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm0454375;
+  imdb:playedCharacter "Self - King of Denmark" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2983 imdb:playedCharacter "Self" .
+_:562bd3866b5049f8bd70192e99ab63e1983 a rdf:Statement;
+  rdf:subject imdb:tt0000550;
+  rdf:predicate imdb:cast-self;
+  rdf:object imdb:nm1678676;
+  imdb:playedCharacter "Self" .
 
-imdb:tt0000552 imdb:cast-director imdb:nm0095816 .
+imdb:tt0000552 imdb:cast-director imdb:nm0095816;
+  imdb:cast-producer imdb:nm0666972 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2987 a rdf:Statement;
+_:562bd3866b5049f8bd70192e99ab63e1987 a rdf:Statement;
   rdf:subject imdb:tt0000552;
   rdf:predicate imdb:cast-producer;
   rdf:object imdb:nm0666972;
@@ -18205,7 +19256,11 @@ imdb:tt0000553 imdb:cast-actor imdb:nm0659947, imdb:nm0710362;
 
 imdb:tt0000554 imdb:cast-actor imdb:nm0085865 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2991 imdb:playedCharacter "Cartoonist" .
+_:562bd3866b5049f8bd70192e99ab63e1991 a rdf:Statement;
+  rdf:subject imdb:tt0000554;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0085865;
+  imdb:playedCharacter "Cartoonist" .
 
 imdb:tt0000555 imdb:cast-actress imdb:nm0421454;
   imdb:cast-actor imdb:nm0488932, imdb:nm0526168;
@@ -18213,18 +19268,38 @@ imdb:tt0000555 imdb:cast-actress imdb:nm0421454;
   imdb:cast-cinematographer imdb:nm0333175;
   imdb:cast-production_designer imdb:nm0470250 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2992 imdb:playedCharacter "Pigen" .
+_:562bd3866b5049f8bd70192e99ab63e1992 a rdf:Statement;
+  rdf:subject imdb:tt0000555;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0421454;
+  imdb:playedCharacter "Pigen" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2993 imdb:playedCharacter "Den unge mand" .
+_:562bd3866b5049f8bd70192e99ab63e1993 a rdf:Statement;
+  rdf:subject imdb:tt0000555;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0488932;
+  imdb:playedCharacter "Den unge mand" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2994 imdb:playedCharacter "Pigens far" .
+_:562bd3866b5049f8bd70192e99ab63e1994 a rdf:Statement;
+  rdf:subject imdb:tt0000555;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0526168;
+  imdb:playedCharacter "Pigens far" .
 
 imdb:tt0000556 imdb:cast-actress imdb:nm0422149;
   imdb:cast-actor imdb:nm0488932 .
 
-_:b2f00e3714564bd2a2adecab33d7abb2998 imdb:playedCharacter "Young Lady" .
+_:562bd3866b5049f8bd70192e99ab63e1998 a rdf:Statement;
+  rdf:subject imdb:tt0000556;
+  rdf:predicate imdb:cast-actress;
+  rdf:object imdb:nm0422149;
+  imdb:playedCharacter "Young Lady" .
 
-_:b2f00e3714564bd2a2adecab33d7abb2999 imdb:playedCharacter "Boyfriend" .
+_:562bd3866b5049f8bd70192e99ab63e1999 a rdf:Statement;
+  rdf:subject imdb:tt0000556;
+  rdf:predicate imdb:cast-actor;
+  rdf:object imdb:nm0488932;
+  imdb:playedCharacter "Boyfriend" .
 
 imdb:tt0020666 imdb:episodeOf imdb:tt15180956;
   imdb:seasonNumber "1"^^xsd:int;
