@@ -4,6 +4,7 @@ updates:
     directory: "/imdb-converter-lib"
     schedule:
       interval: "weekly"
+    target-branch: "develop"
     groups:
       dependencies:
         patterns:
