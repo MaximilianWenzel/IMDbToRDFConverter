@@ -4,7 +4,7 @@ COPY imdb-converter-lib/pom.xml .
 COPY imdb-converter-lib/src ./src
 RUN mvn clean package -DskipTests
 
-FROM openjdk:17-jdk-slim
+FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
 COPY --from=build /build/target/IMDBConverter-1.0-jar-with-dependencies.jar app.jar
 
