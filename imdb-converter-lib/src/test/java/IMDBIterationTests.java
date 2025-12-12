@@ -28,8 +28,10 @@ public class IMDBIterationTests {
     }
 
     @Test
-    public void testIMDBToRDFConversion() throws FileNotFoundException {
-        TurtleWriter turtleWriter = new TurtleWriter(new FileOutputStream(getResource("imdb.ttl")));
+    public void testIMDBToRDFConversion() throws java.io.IOException {
+        File tempFile = File.createTempFile("imdb", ".ttl");
+        tempFile.deleteOnExit();
+        TurtleWriter turtleWriter = new TurtleWriter(new FileOutputStream(tempFile));
         turtleWriter.startRDF();
         turtleWriter.handleNamespace(RDF.PREFIX, RDF.NAMESPACE);
         turtleWriter.handleNamespace(RDFS.PREFIX, RDFS.NAMESPACE);
