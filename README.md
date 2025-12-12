@@ -28,8 +28,8 @@ You can also build and run the application using Docker:
 
 **Disclaimer: This software is not affiliated with, endorsed by, or connected to IMDb (Internet Movie Database).**
 
-The data accessed by this software is provided by IMDb and is subject to their terms. Limited non-commercial use is allowed.
+This tool allows you to download and process data provided by IMDb. This data is subject to IMDb's terms of use.
+
+If you use the data retrieved by this tool, you must comply with the [Non-Commercial Licensing](https://help.imdb.com/article/imdb/general-information/can-i-use-imdb-data-in-my-software/G5JTRESSHJBBHTGX) terms, which typically require you to display the following notice:
 
 > **Information courtesy of IMDb (https://www.imdb.com). Used with permission.**
-
-For full terms and conditions, please refer to the [Non-Commercial Licensing](https://help.imdb.com/article/imdb/general-information/can-i-use-imdb-data-in-my-software/G5JTRESSHJBBHTGX) page.

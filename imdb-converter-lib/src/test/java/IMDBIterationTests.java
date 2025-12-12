@@ -8,12 +8,11 @@ import org.junit.jupiter.api.Test;
 import readers.*;
 
 import java.io.File;
-import java.io.FileNotFoundException;
+
 import java.io.FileOutputStream;
 import java.nio.file.Paths;
 
 public class IMDBIterationTests {
-
 
     public static File getRootDir() {
         return Paths.get(System.getProperty("user.dir"), "src", "test").toFile();
